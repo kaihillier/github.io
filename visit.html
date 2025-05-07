@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Mr+Dafoe&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <title>Visit?</title>
+        <style>
+            body {
+                width: 1400px;
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            #logo {
+                width: 100%;
+            }
+            #banner {
+                width: 100%;
+                float: right;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #296189;
+                width: 100%;
+                }
+            li {
+                float: left;
+                }
+            li a {
+                display: block;
+                color: #ffffff;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 20px;
+                font-family: "Roboto", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                }
+            li a:hover {
+                background-color: #895129; 
+                color: #ffffff;
+                font-weight: 550;
+                }
+             .column1 {
+                float: left;
+                width: 12.7%;
+                background-color: #ffffff;
+            }
+            .column2 {
+                float: left;
+                width: 87.3%;
+                background-color: #ffffff;
+            }
+            .row1:after {
+                display: table;
+                clear: both;
+            }
+            th {
+                color: #895129;
+                font-size: 54px;
+                padding: 16px;
+                padding-top: 34px
+            }
+            td {
+                padding: 10px;
+            }
+            #rates {
+                width: 75%;
+                font-size: 32px;;
+                text-align: center;
+                float: right;
+                margin-right: 12%;
+            }
+            #hours {
+                width: 75%;
+                font-size: 32px;
+                text-align: center;
+                margin-left: 12%;
+            }
+            #location {
+                width: 100%;
+                font-size: larger;
+                text-align: center;
+            }
+            .column {
+                float: left;
+                width: 50%;
+            }
+            .row:after {
+                display: table;
+                clear: both;
+            }
+            #building {
+                width: 100%;
+                z-index: 0;
+                position: relative;
+            }
+            .row {
+                z-index: 1;
+                position: relative;
+                margin-top: -46%;
+            }
+            .left {
+                text-align: left;
+                background-image: url(images2/bluee.png)
+            }
+            .leftt {
+                text-align: left;
+                background-image: url(images2/brownn.png)
+            }
+            .right {
+                text-align: center;
+                background-image: url(images2/bluee.png)
+            }
+            .rightt {
+                text-align: center;
+                background-image: url(images2/brownn.png)
+            }
+            .right:hover {
+                background-image: url(images2/blue.png)
+            }
+            .rightt:hover {
+                background-image: url(images2/brown.png)
+            }
+            .leftt:hover {
+                background-image: url(images2/brown.png);
+            }
+            .left:hover {
+                background-image: url(images2/blue.png)
+            }
+            h1 {
+                color: #296189;
+                font-size: 180%;
+            }
+            a {
+                text-decoration: none;
+                color: #296189;
+            }
+            a:hover {
+                color: #895129;
+            }
+            footer {
+                margin-top: 1765px;
+                text-align: center;
+                background-color: #ffffff;
+                text-align: center;
+                background-image: url(images2/bottom.png);
+            }
+             .columnn {
+                float: left;
+                width: 30%;
+                background-color: #f6f5f5;
+            }
+            .columnnn {
+                float: left;
+                width: 70%;
+                background-color: #f6f5f5;
+                padding-bottom: 14px;
+            }
+            .roww:after {
+                display: table;
+                clear: both;
+            }
+            h2 {
+                text-align: center;
+                font-size: 44px;
+                color: #895129;
+                margin-top: 10.5px;
+            }
+            p {
+                text-align: justify;
+                padding-left: 33px;
+                padding-right: 32px;
+                font-size: 21px;
+                line-height: 1.4;
+            }
+            h3 {
+                text-align: center;
+                margin-top: -22px;
+                font-size: 22px;
+            }
+            span {
+                font-weight: bold;
+            }
+            .roww {
+                margin-top: 46%;
+            }
+            .llama:after {
+                display: table;
+                clear: both;
+            }
+            .carrot {
+                float: left;
+                width: 50%;
+                background-color: #c8d3de;
+                text-align: center;
+                font-size: 40px;
+                font-weight: bold;
+                padding-top: 2%;
+                color: #000000;
+            }
+            #llama {
+                width: 88%;
+                padding: 2% 8% 4% 8%;
+                float: left;
+            }
+            #carot {
+                width: 88%;
+                float: right;
+                padding: 2% 8% 4% 8%;
+            }
+            #llama:hover {
+                padding: 1% 1% 0% 1%;
+                width: 98%;
+                transition: 0.7s;
+            }
+            #carot:hover {
+                padding: 1% 1% 0% 1%;
+                width: 98%;
+                transition: 0.7s;
+            }
+        </style>
+    </head>
+    <body>
+        <a id="top"></a>
+         <div class="row1">
+           <div class="column1"> <a href="http://cs.wheatoncollege.edu/~khillier/project2/pro2.html"> <img id="logo" src="images2/logo4.png" alt="logo"></a> </div>
+           <div class="column2"><img id="banner" src="images2/exibanner(2).webp" alt="banner"></div>
+        </div>     
+        <ul style="float: left; margin-right: 50px">
+            <li style="width: 20%;text-align: center"> <a href="http://cs.wheatoncollege.edu/~khillier/project2/pro2.html">Home</a></li>
+            <li style="width: 20%;text-align: center"> <a href="#hours">Hours</a></li>
+            <li style="width: 20%;text-align: center"> <a href="#rates">Tickets</a></li>
+            <li style="width: 20%;text-align: center"> <a href="#info">Travel Info</a></li>
+            <li style="width: 20%;text-align: center"> <a href="#plans">Floor Plans</a></li>
+        </ul>  
+        <div> <img id="building" src="images2/building3dd.webp" alt="building"> </div>
+       <div> <img src="images2/hourback.png" alt="exi 1" style="width: 100%; opacity: 0.7"> </div>
+        <div class="row">
+            <div class="column">  <table id="hours">
+          <tr> <th colspan="2">Museum Hours?</th> </tr>
+            <tr> 
+                <td class="left">Sunday</td>
+                <td class="right">Closed</td>
+            </tr>
+            <tr> 
+                <td class="leftt">Monday</td>
+                <td class="rightt">9 AM - 6 PM</td>
+            </tr>
+            <tr> 
+                <td class="left">Tuesday</td>
+                <td class="right">9 AM - 6 PM</td>
+            </tr>
+            <tr> 
+                <td class="leftt">Wednesday</td>
+                <td class="rightt">9 AM - 6 PM</td>
+            </tr>
+            <tr> 
+                <td class="left">Thursday</td>
+                <td class="right">9 AM - 6 PM</td>
+            </tr>
+            <tr> 
+                <td class="leftt">Friday</td>
+                <td class="rightt">6 PM - 12 AM</td>
+            </tr>
+            <tr> 
+                <td class="left">Saturday</td>
+                <td class="right">9 AM - 6 PM</td>
+            </tr> 
+        </table></div> 
+            <div class="column">  <table id="rates">
+          <tr> <th colspan="2">Ticket Rates?</th> </tr>
+            <tr> 
+                <td class="left">Adult Day Pass</td>
+                <td class="right">$32</td>
+            </tr>
+            <tr> 
+                <td class="leftt">Youth (6 - 17) Day Pass</td>
+                <td class="rightt">$24</td>
+            </tr>
+            <tr> 
+                <td class="left">Senior (65+) Day Pass</td>
+                <td class="right">$24</td>
+            </tr>
+            <tr> 
+                <td class="leftt">Student Day Pass</td>
+                <td class="rightt">$24</td>
+            </tr>
+            <tr> 
+                <td class="left">Year Pass</td>
+                <td class="right">$149</td>
+            </tr>
+            <tr> 
+                <td class="leftt">Senior Year Pass</td>
+                <td class="rightt">$99</td>
+            </tr> 
+                     <tr> 
+                <td class="left">Student Year Pass</td>
+                <td class="right">$99</td>
+            </tr>
+            <tr> <td class="leftt" colspan="2" style="text-align: center"> *Children under 6 are always free</td> </tr>
+        </table></div>
+        </div>
+         <div class="roww">
+             <a id="info"></a>
+            <div class="columnn">
+                <h2>Travel Information?</h2>
+                <h3><a href="https://www.google.com/maps/dir/Wheaton+College,+East+Main+Street,+Norton,+MA/42.3301187,-71.0787039/@42.1487056,-71.4801142,10z/data=!3m1!4b1!4m10!4m9!1m5!1m1!1s0x89e48a7150cdd74b:0xdc413cb97bfc630e!2m2!1d-71.1839593!2d41.9672177!1m1!4e1!3e1?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank"> 2836 Albany Street<br> Boston, Ma 02108</a></h3>   
+                <p><span>From East:</span> Exit Highway onto Massachusetts Ave, Turn right onto Magazine St, Turn right at the light onto Dudley St, turn right onto Mt. Pleasant Ave. The Parking lot is on your right.</p>
+                <p><span>From West:</span> Exit onto Dudley St. Continue down Dudley St, turn left onto Mt. Pleasant Ave. The Parking lot is on your right.</p>
+            </div>
+            <div class="columnnn"><img src="images2/map2.webp" alt="map" style="width: 100%"></div>
+        </div>
+        <div class="llama">
+            <div class="carrot">Floor 1?<img id="llama" src="images2/floor1.webp" alt="Floor 1"></div>
+            <div class="carrot">Floor 2?<img id="carot" src="images2/floor2.jpg" alt="Floor 2"></div>
+       </div>
+    <footer> <a href="#top"> <img src="images2/gototop2.png" style="width: 300px" alt="go to top"> </a> </footer>    
+   <a id="plans"></a>
+    </body>
+</html>
