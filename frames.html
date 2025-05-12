@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Catalog</title>
+        <link rel="stylesheet" href="css4/catalog.css"/>
+        <script src="script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Kings&family=Limelight&family=Lobster&family=Londrina+Sketch&family=Monoton&family=Mr+Dafoe&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Eagle+Lake&family=Kings&family=Limelight&family=Lobster&family=Londrina+Sketch&family=Monoton&family=Mr+Dafoe&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body><a id="top"></a>
+    <div id="free">
+        Free Shipping - <b>All</b> Orders Over $75!
+    </div>
+    <div id="type"></div>
+    <header>
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="http://cs.wheatoncollege.edu/~khillier/project4/pro4.html">Home</a>
+            <a href="http://cs.wheatoncollege.edu/~khillier/project4/catalog.html">Catalog</a>
+            <a href="http://cs.wheatoncollege.edu/~khillier/project4/frames.html">Frames</a>
+            <a href="http://cs.wheatoncollege.edu/~khillier/project4/checkout.html">Checkout</a>
+        </div>
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <div class="cart">
+            <a href="http://cs.wheatoncollege.edu/~khillier/project4/checkout.html"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+        <div id="monetio"><span><b>C. M</b>onetio</span></div>
+        <div id="prints"><span id="printy">Prints|Framing</span></div>
+        <a href="http://cs.wheatoncollege.edu/~khillier/project4/checkout.html"><span id="numItems"></span></a>
+    </header>
+        
+         <div class="container">
+            <div class="title">Framing Options</div>
+                <div class="up">     
+                    <div class="paint">
+                    <img class="painting" src="images5/frame1.png" alt="paint 1">
+                <div class="sel">
+                        <form>
+                                <select id="select7" onchange=this.form.submit()’>
+                                    <option value="$68.49">12" x 18"</option>
+                                    <option value="$86.49">18" x 24"</option>
+                                    <option value="$99.49">27" x 39"</option>
+                                </select>
+                            <noscript><input type="submit" value=Submit></noscript>
+                        <span id="name7">Price</span></form>
+                    <script>
+                        document.getElementById("select7").addEventListener("click", tuff);
+                        function tuff(){
+                            var data;
+                            data = document.getElementById("select7");
+                            document.getElementById("name7").innerHTML = data.value;}
+                    </script>
+                        <form>
+                            <input type="button" id="button1" value="Add to Cart">
+                        </form>
+                </div>
+            </div>
+                    <div class="paint">
+                    <img class="painting" src="images5/frame2.png" alt="paint 1">
+                <div class="sel">
+                        <form>
+                                <select id="select8" onchange=this.form.submit()’>
+                                    <option value="$18.39">12" x 18"</option>
+                                    <option value="$26.39">18" x 24"</option>
+                                    <option value="$34.39">27" x 39"</option>
+                                </select>
+                            <noscript><input type="submit" value=Submit></noscript>
+                        <span id="name8">Price</span></form>
+                    <script>
+                        document.getElementById("select8").addEventListener("click", tuff);
+                        function tuff(){
+                            var data;
+                            data = document.getElementById("select8");
+                            document.getElementById("name8").innerHTML = data.value;}
+                    </script>
+                        <form>
+                            <input type="button" id="button2" value="Add to Cart">
+                        </form>
+                </div>
+            </div>       
+                    <div class="paint">
+                    <img class="painting" src="images5/frame444.png" alt="paint 1">
+                <div class="sel">
+                        <form>
+                                <select id="select9" onchange=this.form.submit()’>
+                                    <option value="$29.49">12" x 18"</option>
+                                    <option value="$34.49">18" x 24"</option>
+                                    <option value="$39.49">27" x 39"</option>
+                                </select>
+                            <noscript><input type="submit" value=Submit></noscript>
+                        <span id="name9">Price</span></form>
+                    <script>
+                        document.getElementById("select9").addEventListener("click", tuff);
+                        function tuff(){
+                            var data;
+                            data = document.getElementById("select9");
+                            document.getElementById("name9").innerHTML = data.value;}
+                    </script>
+                        <form>
+                            <input type="button" id="button3" value="Add to Cart">
+                        </form>
+                </div>
+            </div>
+                    <div class="paint">
+                    <img class="painting" src="images5/frame3.png" alt="paint 1">
+                <div class="sel">
+                        <form>
+                                <select id="select10" onchange=this.form.submit()’>
+                                    <option value="$48.99">12" x 18"</option>
+                                    <option value="$56.39">18" x 24"</option>
+                                    <option value="$74.39">27" x 39"</option>
+                                </select>
+                            <noscript><input type="submit" value=Submit></noscript>
+                        <span id="name10">Price</span></form>
+                    <script>
+                        document.getElementById("select10").addEventListener("click", tuff);
+                        function tuff(){
+                            var data;
+                            data = document.getElementById("select10");
+                            document.getElementById("name10").innerHTML = data.value;}
+                    </script>
+                        <form>
+                            <input type="button" id="button4" value="Add to Cart">
+                        </form>
+                </div>
+            <div class="line1"></div><a class="check222" href="http://cs.wheatoncollege.edu/~khillier/project4/pro4.html"><div class="check111">Go Home<img class="arrow" src="images5/home.png" alt="home icon"></div></a><div class="line1"></div></div>
+                    <div class="paint">
+                    <img class="painting" src="images5/frame5.png" alt="paint 1">
+                <div class="sel">
+                        <form>
+                                <select id="select11" onchange=this.form.submit()’>
+                                    <option value="$22.98">12" x 18"</option>
+                                    <option value="$34.39">18" x 24"</option>
+                                    <option value="$44.88">27" x 39"</option>
+                                </select>
+                            <noscript><input type="submit" value=Submit></noscript>
+                        <span id="name11">Price</span></form>
+                    <script>
+                        document.getElementById("select11").addEventListener("click", tuff);
+                        function tuff(){
+                            var data;
+                            data = document.getElementById("select11");
+                            document.getElementById("name11").innerHTML = data.value;}
+                    </script>
+                        <form>
+                            <input type="button" id="button5" value="Add to Cart">
+                        </form>
+                </div>
+            <div class="line2"></div><a class="check22" href="#top"><div class="check11">To Top<img class="arrow" src="images5/arrowup.png" alt="arrow"></div></a><div class="line2"></div></div>
+                    <div class="paint">
+                    <img class="painting" src="images5/frame7.png" alt="paint 1">
+                <div class="sel">
+                        <form>
+                                <select id="select12" onchange=this.form.submit()’>
+                                    <option value="$88.87">12" x 18"</option>
+                                    <option value="$92.89">18" x 24"</option>
+                                    <option value="$99.99">27" x 39"</option>
+                                </select>
+                            <noscript><input type="submit" value=Submit></noscript>
+                        <span id="name12">Price</span></form>
+                    <script>
+                        document.getElementById("select12").addEventListener("click", tuff);
+                        function tuff(){
+                            var data;
+                            data = document.getElementById("select12");
+                            document.getElementById("name12").innerHTML = data.value;}
+                    </script>
+                        <form>
+                            <input type="button" id="button6" value="Add to Cart">
+                        </form>
+                </div>
+            <div class="line3"></div><a class="check2" href="http://cs.wheatoncollege.edu/~khillier/project4/checkout.html"><div class="check1">Checkout<img class="arrow" src="images5/point.png" alt="arrow"></div></a><div class="line3"></div></div>
+                </div>
+             <script>document.getElementById("button1"). addEventListener("click",cart);
+                var count;
+                count = 1;
+            
+            function cart() {
+                document.getElementById("numItems").innerHTML = count;
+                count = count + 1;
+            }
+            
+             document.getElementById("button2"). addEventListener("click",cart);
+                var count;
+                count = 1;
+            
+            function cart() {
+                document.getElementById("numItems").innerHTML = count;
+                count = count + 1;
+            }
+            document.getElementById("button3"). addEventListener("click",cart);
+                var count;
+                count = 1;
+            
+            function cart() {
+                document.getElementById("numItems").innerHTML = count;
+                count = count + 1;
+            }
+            
+             document.getElementById("button4"). addEventListener("click",cart);
+                var count;
+                count = 1;
+            
+            function cart() {
+                document.getElementById("numItems").innerHTML = count;
+                count = count + 1;
+            }
+            document.getElementById("button5"). addEventListener("click",cart);
+                var count;
+                count = 1;
+            
+            function cart() {
+                document.getElementById("numItems").innerHTML = count;
+                count = count + 1;
+            }
+            
+             document.getElementById("button6"). addEventListener("click",cart);
+                var count;
+                count = 1;
+            
+            function cart() {
+                document.getElementById("numItems").innerHTML = count;
+                count = count + 1;
+            }</script>
+        </div>
+    </body>
+</html>

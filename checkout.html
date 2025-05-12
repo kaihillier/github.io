@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Checkout</title>
+        <link rel="stylesheet" href="css4/checkout.css"/>
+        <script src="script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Kings&family=Limelight&family=Lobster&family=Londrina+Sketch&family=Monoton&family=Mr+Dafoe&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Eagle+Lake&family=Kings&family=Limelight&family=Lobster&family=Londrina+Sketch&family=Monoton&family=Mr+Dafoe&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <div id="free">
+        Free Shipping - <b>All</b> Orders Over $75!
+    </div>
+    <div id="type"></div>
+    <header>
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="http://cs.wheatoncollege.edu/~khillier/project4/pro4.html">Home</a>
+            <a href="http://cs.wheatoncollege.edu/~khillier/project4/catalog.html">Catalog</a>
+            <a href="http://cs.wheatoncollege.edu/~khillier/project4/frames.html">Frames</a>
+            <a href="http://cs.wheatoncollege.edu/~khillier/project4/checkout.html">Checkout</a>
+        </div>
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <div class="cart">
+            <a href="http://cs.wheatoncollege.edu/~khillier/project4/checkout.html"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+        <div id="monetio"><span class="puns"><b>C. M</b>onetio</span></div>
+        <div id="prints"><span id="printy">Prints|Framing</span></div>
+    </header>
+        <div class="container">
+        <form id="tota">
+            <label>
+                Item Total: <input type="number" id="total">                  
+            </label>
+        </form><div class="dasherr"></div>
+        <p id="location">
+            Shipping Location: <select id="select">
+                        <option value="">Select</option>
+                        <option value="2.99">Boston</option>
+                        <option value="6.99">Miami</option>
+                        <option value="11.99">LA</option>
+                        <option value="8.99">Houston</option>
+                    </select>
+        </p><div class="dasher"></div>
+        <input type="button" id="enter" value="Enter">
+        
+            <form>     
+                <div class="cost"> 
+        <p id="ordersummary">
+            Order Summary<span id="summy" style="float: right;"></span>
+        </p>
+        <div id="line"></div>
+        <p>
+            Subtotal:<span id="sub" style="float: right;"></span>
+        </p>
+        <div class="dash"></div>
+        <p>
+            Shipping:
+             <span id="ship" style="float: right;"></span>
+        </p>
+        <div class="dash"></div>
+        <p>
+            Sales Tax (6.25%): <span id="tax" style="float: right;"></span>
+        </p>
+        <div class="dash"></div>
+        <div class="dasy"></div>
+        <p id="tot">
+            Total: <span id="gtotal" style="float: right;"></span>
+        </p><div class="dash"></div>
+        <script>
+            document.getElementById("enter").addEventListener("click",sum);
+                function sum(){
+                    var data;
+                    data = document.getElementById("total");
+                    document.getElementById("summy").innerHTML = "Items: " + (data.value);
+            }
+            
+            document.getElementById("enter").addEventListener("click", cart);
+                function cart(){
+                    var data;
+                    data = document.getElementById("total");
+                    var result = (Number(data.value) * 19.99).toFixed(2);
+                    document.getElementById("sub").innerHTML = "$" + result;
+            }
+           
+            document.getElementById("select").addEventListener("click", ship);
+                function ship(){
+                    var data;
+                    data = document.getElementById("select");
+                    document.getElementById("ship").innerHTML = "$" + data.value;}
+            
+            document.getElementById("enter").addEventListener("click",tax);
+                function tax(){
+                    var data;
+                    data = document.getElementById("total");
+                    var result = ((Number(data.value) * 19.99) * .0625).toFixed(2);
+                    document.getElementById("tax").innerHTML = "$" + result;
+            }
+            
+            document.getElementById("enter").addEventListener("click", cartt);
+                function cartt(){
+                    var data;
+                    var shipping;
+                    data = document.getElementById("total");
+                    shipping = document.getElementById("select");
+                    var result = (Number(((Number(data.value) * 19.99) * 1.0625) + Number(shipping.value))).toFixed(2);
+                    document.getElementById("gtotal").innerHTML = "$" + result;
+            }  
+        </script>
+    </div>
+            </form>  
+            <div class="costt"><div class="pay">Payment Information</div>
+                <div class="dasy"></div>
+                <div class="cards">
+                    <div class="inside">
+                        <div class="fa fa-cc-visa"></div>
+                    </div>
+                    <div class="inside">
+                        <div class="fa fa-cc-discover"></div>
+                    </div>
+                    <div class="inside">
+                        <div class="fa fa-cc-paypal"></div>
+                    </div>
+                    <div class="inside">
+                        <div class="fa fa-cc-mastercard"></div>
+                    </div>
+                </div>
+ 
+                <div id="names">
+                    <div class="info">Cardholder's Name</div>
+                        <label>
+                            <input type="text" id="nam">                  
+                        </label>
+                </div>
+                <div id="numbs">
+                    <div class="info">Card Number</div>
+                    <label>
+                        <input type="number" id="numb">                  
+                    </label>
+                </div>
+            <div id="disp"><div class="info">Expiry</div><div class="infot">CVC</div></div>
+                <div id="big">
+                <div id="dates">
+                            <label>
+                                <input type="text" id="date">                  
+                            </label>
+                </div>
+
+                <div id="datess">
+                        <label>
+                            <input type="number" id="expy">                  
+                        </label>
+                </div>
+            </div>
+            </div>
+            <div class="costtt">
+                <div id="got"><span id="thanky"></span></div>
+                        <form>
+                            <input type="button" id="paynow" value="Pay Now">
+                        </form>
+                <script>
+                    document.getElementById("paynow").addEventListener("click", thanks);
+                    function thanks(){
+                        
+                        var data;
+                        data = document.getElementById("nam");
+                        document.getElementById("thanky").innerHTML = data.value + ", Thank you for your order! Check your email for your receipt and shipping information.";
+                    }
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
