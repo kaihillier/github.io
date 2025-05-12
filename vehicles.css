@@ -1,0 +1,158 @@
+body{
+    width: 98%;
+    font-family: "Geist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 17px;
+    margin: 0;
+    width: 100%;
+    z-index: 60;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #707070;
+    width: 100%;
+    text-align: center;
+}
+li{
+    float: left;
+    width: 26.6%;
+    text-align: center;
+}
+li a{
+    display: block;
+    color: #ffffff;
+    padding: 10px 20px 13px 20px;
+    text-decoration: none;
+    font-size: 30px;
+    height: 35px;
+    text-align: center;
+}
+#logo{
+    width: 20%;
+    background-color: #707070;
+}
+#logo:hover{
+    width: 20%;
+}
+#logo a:hover{
+    background-color: #707070;
+    padding-bottom: 13px;
+}
+li a:hover{
+    background-color: #01095c;
+    color: #ffffff;
+    transition: 0.3s;
+    font-size: 34px;
+    font-weight: bold;
+    padding-bottom: 17px;
+}
+#img{
+    padding-top: 0;
+    margin-top: -12px;
+    width: 110px;
+    margin-left: -10px;
+}
+#img:hover{
+    width: 125px;
+    margin-left: -16px;
+    margin-top: -16px;
+    transition: 0.5s;
+}
+#vehicle1{
+    width: 44%;
+    height: 80%;
+    background-color: #ffffff;
+    position: fixed;
+    top: 84px;
+    left: 0;
+    animation-name: vehicle1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    border-radius: 6px;
+    text-align: center;
+}
+#v1{
+    width: 100%;
+    padding-top: 16px;
+}
+#vehicle2{
+    width: 44%;
+    height: 80%;
+    background-color: #ffffff;
+    position: fixed;
+    top: 84px;
+    right: 0;
+    animation-name: vehicle2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    border-radius: 6px;
+    text-align: center;
+}
+#v2{
+    width: 100%;
+    padding-top: 16px;
+}
+@keyframes vehicle1{
+    0% {left: -100%}
+    80%{left: 6%; width: 44%; background-color: #FFA500;}
+    100%{left: 4%; width: 44%; border-radius: 6px; background-color: #d8d8d8;}
+}
+@keyframes vehicle2{
+    0% {right: -100%}
+    80%{right: 6%; width: 44%; background-color: #FFA500;}
+    100%{right: 4%; width: 44%; border-radius: 6px; background-color: #d8d8d8;}
+}
+#car1{
+    font-size: 40px;
+    text-decoration: none;
+    border: solid;
+    padding: 4px 6px 8px 6px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #f5f5f5;
+    animation-name: explore;
+    animation-delay: 2.4s;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    color: #01095c;
+}
+#car2{
+    font-size: 40px;
+    text-decoration: none;
+    border: solid;
+    padding: 4px 6px 8px 6px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #f5f5f5;
+    animation-name: explore;
+    animation-delay: 2.4s;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    color: #01095c;
+}
+@keyframes explore{
+    to{opacity: 1}
+}
+#car1:hover{
+    background-color: #ededed;
+    transition: 0.3s;
+    border-color: #FFA500;
+    font-size: 42px;
+}
+#car2:hover{
+    background-color: #ededed;
+    transition: 0.3s;
+    border-color: #FFA500;
+    font-size: 42px;
+}

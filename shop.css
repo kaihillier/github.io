@@ -1,0 +1,219 @@
+body{
+    width: 98%;
+    font-family: "Geist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 17px;
+    margin: 0;
+    width: 100%;
+    z-index: 60;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #707070;
+    width: 100%;
+    text-align: center;
+}
+li{
+    float: left;
+    width: 26.6%;
+    text-align: center;
+}
+li a{
+    display: block;
+    color: #ffffff;
+    padding: 10px 20px 13px 20px;
+    text-decoration: none;
+    font-size: 30px;
+    height: 35px;
+    text-align: center;
+}
+#logo{
+    width: 20%;
+    background-color: #707070;
+}
+#logo:hover{
+    width: 20%;
+}
+#logo a:hover{
+    background-color: #707070;
+    padding-bottom: 13px;
+}
+li a:hover{
+    background-color: #01095c;
+    color: #ffffff;
+    transition: 0.3s;
+    font-size: 34px;
+    font-weight: bold;
+    padding-bottom: 17px;
+}
+#img{
+    padding-top: 0;
+    margin-top: -12px;
+    width: 110px;
+    margin-left: -10px;
+}
+#img:hover{
+    width: 125px;
+    margin-left: -16px;
+    margin-top: -16px;
+    transition: 0.5s;
+}
+.shop3{
+    width: 100%;
+    margin-top: 38px;
+    background-color: #e7e7e7;
+    border: solid;
+    border-color: #ffa500;
+    border-radius: 6px;
+}
+.shop4{
+    width: 100%;
+    margin-top: 12px;
+    background-color: #e7e7e7;
+    border: solid;
+    border-color: #ffa500;
+    border-radius: 6px;
+}
+.image{
+    width: 42%;
+}
+#deals{
+    margin-top: 80px;
+    margin-left: 2%;
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 3px 3px 7px #959595;
+}
+.shopinfo{
+    font-size: 20px;
+    margin-top: -34px;
+}
+span{
+    font-size: 20px;
+    text-decoration: line-through;
+    color: red;
+}
+.apr{
+    display: inline;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1061px){
+.well{
+    font-size: 1px;
+    margin-left: -332%
+}
+}
+@media screen and (min-width: 1060px){
+.well{
+    font-size: 18px;
+}
+}
+@media screen and (max-width: 661px){
+.map{
+    width: 56%;
+    float: left;
+    text-align: left;
+    padding-left: 2%;
+    font-size: 31px;
+    font-weight: bold;
+    margin-top: -30px;
+}
+}
+@media screen and (min-width: 660px){
+.map{
+    width: 56%;
+    float: left;
+    text-align: left;
+    padding-left: 2%;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: -30px;
+}
+}
+
+@media screen and (max-width: 1141px){
+.lease{
+    background-color: #b98017;
+    width: 26%;
+    float: right;
+    position: absolute;
+    right: 446666%;
+    margin-top: 55px;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: left;
+    padding-top: 2px;
+    padding-bottom: 20px;
+    color: #ffffff;
+}
+h2{
+    padding-left: 8%;
+}
+.month{
+    font-weight: bold;
+    font-size: 20px;
+    display: inline;
+    text-align: left;
+    padding-left: 8%;
+}
+.less{
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 8%;
+}
+.les{
+    text-align: left;
+    padding-left: 8%;
+    margin-top: -10px;
+}
+}
+@media screen and (min-width: 1140px){
+.lease{
+    background-color: #ffa500;
+    width: 26%;
+    float: right;
+    position: absolute;
+    right: 44%;
+    margin-top: 55px;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: left;
+    padding-top: 2px;
+    padding-bottom: 20px;
+    color: #ffffff;
+}
+h2{
+    padding-left: 8%;
+}
+.month{
+    font-weight: bold;
+    font-size: 20px;
+    display: inline;
+    text-align: left;
+    padding-left: 8%;
+}
+.less{
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 8%;
+}
+.les{
+    text-align: left;
+    padding-left: 8%;
+    margin-top: -10px;
+}
+}

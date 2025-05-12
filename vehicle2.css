@@ -1,0 +1,253 @@
+@media screen and (max-width: 756px){
+.left{
+    display: inline;
+    float: left;
+    height: 300px;
+    width: 35%;
+    margin-top: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    z-index: 1;
+    position: fixed;
+    text-shadow: 3px 3px 7px #959595;
+}
+    .msrp{
+    position: fixed;
+    left: 60%;
+    opacity: 0;
+}
+}
+@media screen and (min-width: 757px){
+.left{
+    display: inline;
+    float: left;
+    height: 300px;
+    width: 35%;
+    margin-top: 38px;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    z-index: 1;
+    position: fixed;
+    text-shadow: 3px 3px 7px #959595;
+}
+    .msrp{
+    position: fixed;
+    left: 60%;
+    opacity: 0;
+}
+}
+@media screen and (min-width: 1050px){
+.left{
+    display: inline;
+    float: left;
+    height: 300px;
+    width: 35%;
+    margin-top: 38px;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    z-index: 1;
+    position: fixed;
+    text-shadow: 3px 3px 7px #959595;
+}
+.msrp{
+    position: fixed;
+    top: 290px;
+    left: 5%;
+    width: 25%;
+    z-index: 2;
+    padding: 18px 18px 11px 18px;
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 1;
+    background-color: #ffa500;
+    text-align: center;
+    border: solid;
+    padding-right: 20px;
+    color: #000000;
+    border-color: #989898;
+    box-shadow: 12px 10px 17px #7a7a7a;
+    border-radius: 4px;
+}
+}
+body{
+    width: 98%;
+    font-family: "Geist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f7f7f7;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 17px;
+    margin: 0;
+    width: 100%;
+    z-index: 60;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #707070;
+    width: 100%;
+    text-align: center;
+}
+li{
+    float: left;
+    width: 26.6%;
+    text-align: center;
+}
+li a{
+    display: block;
+    color: #ffffff;
+    padding: 10px 20px 13px 20px;
+    text-decoration: none;
+    font-size: 30px;
+    height: 35px;
+    text-align: center;
+}
+#logo{
+    width: 20%;
+    background-color: #707070;
+}
+#logo:hover{
+    width: 20%;
+    
+}
+#logo a:hover{
+    background-color: #707070;
+    padding-bottom: 13px;
+}
+li a:hover{
+    background-color: #01095c;
+    color: #ffffff;
+    transition: 0.3s;
+    font-size: 34px;
+    font-weight: bold;
+    padding-bottom: 17px;
+}
+#img{
+    padding-top: 0;
+    margin-top: -12px;
+    width: 110px;
+    margin-left: -10px;
+}
+#img:hover{
+    width: 125px;
+    margin-left: -16px;
+    margin-top: -16px;
+    transition: 0.5s;
+}
+#image{
+    width: 100%;
+    border-radius: 6px;
+    z-index: 0;
+}
+.right{
+    width: 60%;
+    position: fixed;
+    right: 16px;
+    margin-top: 66px;
+    z-index: 0;
+}
+#container{
+    z-index: 6;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 86%;
+    background-color: #f7f7f7;
+    padding-bottom: 60px;
+}
+#price{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: -6px;
+    margin-top: 4px;
+    text-align: center;
+}
+#shop{
+    color: #01095c;
+    text-decoration: none;
+    border: solid;
+    padding: 2px 4px 3px 5px;
+    background-color: #f7f7f7;
+    font-size: 23px;
+    border-color: #000000;
+    border-radius: 4px;
+}
+#shop:hover{
+    background-color: #cbcbcb;
+    color: #000000;
+    font-size: 26px;
+    transition: 0.5s;
+}
+#shopp{
+    margin-top: 14px;
+    margin-bottom: 8px;
+}
+.f6{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.up{
+    font-weight: bold;
+    font-size: 26px;
+}
+.down{
+    margin-top: -47px;
+    text-align: right;
+    padding-right: 20%;
+}
+.f3{
+    width: 94%;
+    float: left;
+    margin-left: 1%;
+    background-color: #ffffff;
+    border: solid;
+    border-color: #ffa500;
+    border-radius: 6px;
+    padding: 1.8%;
+    margin-top: 43px;
+}
+.text{
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 20px;
+}
+.wide{
+    width: 44%;
+    float: left;
+    background-color: #ffffff;
+    border: solid;
+    margin-left: 1%;
+    margin-top: 30px;
+    border-radius: 6px;
+    padding: 1.8%;
+    border-color: #ffa500;
+}
+.wide1{
+    width: 44%;
+    float: right;
+    background-color: #ffffff;
+    border: solid;
+    margin-right: 1%;
+    margin-top: 30px;
+    border-radius: 6px;
+    padding: 1.8%;
+    border-color: #ffa500;
+}
+h1{
+    margin-top: 6px;
+    font-size: 30px;
+}

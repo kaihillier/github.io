@@ -1,0 +1,317 @@
+body{
+    width: 98%;
+    font-family: "Geist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 17px;
+    margin: 0;
+    width: 100%;
+    z-index: 60;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #707070;
+    width: 100%;
+    text-align: center;
+}
+li{
+    float: left;
+    width: 26.6%;
+    text-align: center;
+}
+li a{
+    display: block;
+    color: #ffffff;
+    padding: 10px 20px 13px 20px;
+    text-decoration: none;
+    font-size: 30px;
+    height: 35px;
+    text-align: center;
+}
+#logo{
+    width: 20%;
+    background-color: #707070;
+}
+#logo:hover{
+    width: 20%;
+}
+#logo a:hover{
+    background-color: #707070;
+    padding-bottom: 13px;
+}
+li a:hover{
+    background-color: #01095c;
+    color: #ffffff;
+    transition: 0.3s;
+    font-size: 34px;
+    font-weight: bold;
+    padding-bottom: 17px;
+}
+#img{
+    padding-top: 0;
+    margin-top: -12px;
+    width: 110px;
+    margin-left: -10px;
+}
+#img:hover{
+    width: 125px;
+    margin-left: -16px;
+    margin-top: -16px;
+    transition: 0.5s;
+}
+.longtruck{
+    width: 2000px;
+    position: fixed;
+    z-index: 0;
+    top: 225px;
+    left: -2139px;
+    animation-name: moveTruck;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes moveTruck{
+    from{top: 225px;}
+    to{left: 2px;}
+}
+@keyframes moveDanger{
+    from{font-weight: 600;}
+    to{opacity: 1;}
+}
+.truckanimation{
+    background-color: #f7f7f7;
+    height: 550px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.container{
+    z-index: 3;
+    width: 100%;
+    position: absolute;
+    top: 540px;
+    left: 0;
+    right: 0;
+    background-color: #f7f7f7;
+    padding-bottom: 40px;
+}
+.msrp{
+    position: fixed;
+    left: 60%;
+    margin-right: 20px;
+    z-index: 2;
+    margin-top: 96px;
+    padding: 18px 18px 11px 18px;
+    font-size: 18px;
+    font-weight: 600;
+    animation-name: moveMsrp;
+    animation-duration: 3s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    background-color: #ffa500;
+    text-align: center;
+    border: solid;
+    padding-right: 20px;
+    color: #000000;
+    border-color: #989898;
+    box-shadow: 12px 10px 17px #7a7a7a;
+    border-radius: 4px;
+}
+p{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: -6px;
+    margin-top: 4px;
+    text-align: center;
+}
+#shop{
+    color: #01095c;
+    text-decoration: none;
+    border: solid;
+    padding: 2px 4px 3px 5px;
+    background-color: #f7f7f7;
+    font-size: 23px;
+    border-color: #000000;
+    border-radius: 4px;
+}
+#shop:hover{
+    background-color: #cbcbcb;
+    color: #000000;
+    font-size: 26px;
+    transition: 0.5s;
+}
+@keyframes moveMsrp{
+    to{opacity: 1;}
+}
+#shopp{
+    margin-top: 14px;
+    margin-bottom: 8px;
+}
+@media screen and (max-width: 741px){
+.longbed{
+    position: fixed;
+    z-index: 1;
+    width: 44%;
+    margin-top: 56px;
+    padding-top: 20px;
+    font-size: 50px;
+    font-weight: 600;
+    margin-left: 70px;
+    animation-name: moveDanger;
+    animation-duration: 4.3s;
+    animation-delay: 2.3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    color: #000000;
+    line-height: 1.2;
+    text-shadow: 3px 3px 7px #959595;
+}
+}
+@media screen and (min-width: 740px){
+.longbed{
+    position: fixed;
+    z-index: 1;
+    width: 51%;
+    margin-top: 56px;
+    padding-top: 20px;
+    font-size: 69px;
+    font-weight: 600;
+    margin-left: 70px;
+    animation-name: moveDanger;
+    animation-duration: 4.3s;
+    animation-delay: 2.3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    color: #000000;
+    line-height: 1.2;
+    text-shadow: 3px 3px 7px #959595;
+}
+}
+#main{
+    width: 100%;
+    margin-top: -28px;
+}
+.column{
+    float: left;
+    width: 43.9%;
+    padding: 1.8%;
+    text-align: justify;
+    border: solid;
+    margin-left: 1%;
+    margin-top: 35px;
+    border-radius: 6px;
+    border-color: #ffa500;
+    font-size: 20px;
+    line-height: 1.5;
+    background-color: #ffffff;
+}
+h1{
+    text-align: left;
+    margin-top: 2px;
+    margin-bottom: 16px;
+}
+.column2{
+    float: right;
+    width: 43.9%;
+    padding: 1.8%;
+    text-align: justify;
+    border: solid;
+    margin-right: 1%;
+    margin-top: 35px;
+    border-radius: 6px;
+    border-color: #ffa500;
+    font-size: 20px;
+    line-height: 1.5;
+    background-color: #ffffff;
+}
+#home{
+    margin-top: 30px;
+}
+#quote{
+    float: left;
+    width: 94%;
+    padding: 1.8%;
+    text-align: justify;
+    border: solid;
+    margin-left: 1%;
+    margin-top: 30px;
+    border-radius: 6px;
+    border-color: #ffa500;
+    font-size: 20px;
+    line-height: 1.5;
+    background-color: #ffffff;
+    color: #01095c;
+    font-style: italic;
+}
+span{
+    float: right;
+    padding-right: 2%;
+    color: #01095c;
+    font-style: normal;
+}
+@media screen and (min-width: 800px){
+.tiredeal{
+    width: 32%;
+    float: left;
+    margin-top: 30px;
+    margin-left: 1%;
+    border-radius: 6px;
+}
+.tiredeal1{
+    width: 32%;
+    float: left;
+    margin-top: 30px;
+    margin-left: 1%;
+    border-radius: 6px;
+}
+.tiredeal2{
+    width: 32%;
+    float: right;
+    margin-top: 30px;
+    margin-right: 1%;
+    border-radius: 6px;
+}
+}
+@media screen and (max-width: 801px){
+.tiredeal{
+    width: 98%;
+    float: left;
+    margin-top: 30px;
+    margin-left: 1%;
+    border-radius: 6px;
+}
+.tiredeal1{
+    width: 98%;
+    float: left;
+    margin-top: 15px;
+    margin-left: 1%;
+    border-radius: 6px;
+}
+.tiredeal2{
+    width: 98%;
+    float: right;
+    margin-top: 15px;
+    margin-right: 1%;
+    border-radius: 6px;
+}
+}
+h5{
+    margin-top: 98px;
+    text-align: center;
+    background-color: #ffa500;
+    border-radius: 6px;
+    font-size: 40px;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding: 2%;
+}
