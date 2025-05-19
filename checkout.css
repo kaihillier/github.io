@@ -89,7 +89,7 @@ i{
     color: #d9d6be;
 }
 header{
-    background-image: url(images4/monetbanner3.webp);
+    background-image: url(monetbanner3.webp);
     position: fixed;
     left: 0;
     top: 22px;
@@ -115,7 +115,7 @@ header{
     z-index: 0;
 }
 span{
-    background-image: url(images4/backgound2.png);
+    background-image: url(backgound2.png);
     border: solid;
     border-radius: 4px;
     padding: 0 12px 0 12px;
@@ -229,11 +229,11 @@ p{
     margin-top: 22px;
 }
 #tax{
-    background-image: url(images4/print.png);
+    background-image: url(print.png);
     border: none;
 }
 #gtotal{
-    background-image: url(images4/print.png);
+    background-image: url(print.png);
     border: none;
     font-weight: 600;
 }
@@ -242,15 +242,15 @@ p{
     color: #28353f;
 }
 #ship{
-    background-image: url(images4/print.png);
+    background-image: url(print.png);
     border: none;
 }
 #sub{
-    background-image: url(images4/print.png);
+    background-image: url(print.png);
     border: none;
 }
 #summy{
-    background-image: url(images4/print.png);
+    background-image: url(print.png);
     border: none;
 }
 #tota{
@@ -444,7 +444,7 @@ p{
     line-height: 1.4;
 }
 #thanky{
-    background-image: url(images4/print.png);
+    background-image: url(print.png);
     border: none;
     margin-left: 0;
     padding: 8px 8px 8px 0;
@@ -550,7 +550,7 @@ i{
     color: #d9d6be;
 }
 header{
-    background-image: url(images4/monetbanner3.webp);
+    background-image: url(monetbanner3.webp);
     position: fixed;
     left: 0;
     top: 22px;
@@ -583,7 +583,7 @@ header{
     text-shadow: 4px 3px 6px #494949;
 }
 .puns{
-    background-image: url(images4/backgound2.png);
+    background-image: url(backgound2.png);
     border: solid;
     border-radius: 4px;
     padding: 0 12px 0 12px;
@@ -595,7 +595,7 @@ header{
     font-style: normal;
     font-size: 36px;
     border: none;
-    background-image: url(images4/print.png);
+    background-image: url(print.png);
     padding: 1px 4px 1px 4px;
     }
 #free{
@@ -698,11 +698,11 @@ p{
     margin-top: 22px;
 }
 #tax{
-    background-image: url(images4/print.png);
+    background-image: url(print.png);
     border: none;
 }
 #gtotal{
-    background-image: url(images4/print.png);
+    background-image: url(print.png);
     border: none;
     font-weight: 600;
 }
@@ -711,15 +711,15 @@ p{
     color: #28353f;
 }
 #ship{
-    background-image: url(images4/print.png);
+    background-image: url(print.png);
     border: none;
 }
 #sub{
-    background-image: url(images4/print.png);
+    background-image: url(print.png);
     border: none;
 }
 #summy{
-    background-image: url(images4/print.png);
+    background-image: url(print.png);
     border: none;
 }
 #tota{
@@ -924,7 +924,7 @@ p{
     margin-top: -1px;
 }
 #thanky{
-    background-image: url(images4/print.png);
+    background-image: url(print.png);
     border: none;
     margin-left: 0;
     padding: 8px 8px 8px 0;
