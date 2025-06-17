@@ -1,0 +1,2113 @@
+@media screen and (max-width: 380px){
+body{
+    width: 98%;
+    margin: auto;
+    background-color: #e8e4de;
+}
+        h6{
+        font-size: 2.3vw;
+        color: #36688a;
+        margin-left: 39%;
+        text-align: justify;
+        padding: 4%;
+        margin-top: -20px;
+        line-height: 3.2vw;
+    }
+    h3{
+        margin-left: 39%;
+        margin-top: 10px;
+        font-size: 13px;
+        color: #1f3b4e;
+        text-align: center;
+    }
+        #welcome{
+        background-color: #e8e4de;
+        width: 90%;
+        height: 36vw;
+        float: right;
+        margin-right: 5%;
+        margin-left: 0;
+        margin-top: 8%;
+    }
+        #portrait1{
+        position: absolute;
+        width: 35%;
+        margin: 5%;
+        animation-name: port1;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+    #portrait3{
+        position: absolute;
+        width: 35%;
+        margin: 5%;
+        animation-name: port3;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+     #portrait4{
+        position: absolute;
+        width: 35%;
+        margin: 5%;
+        animation-name: port4;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+    #portrait5{
+        position: absolute;
+        width: 35%;
+        margin: 5%;
+        animation-name: port5;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+    #portrait2{
+        position: absolute;
+        width: 35%;
+        margin: 5%;
+        animation-name: port2;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes port1{
+        0%{opacity: 100%}
+        20%{opacity: 100%}
+        21%{opacity: 0%}
+        100%{opacity: 0%}
+    }
+        @keyframes port2{
+        0%{opacity: 0%}
+        19%{opacity: 0%}
+        20%{opacity: 100%}
+        40%{opacity: 100%}
+        41%{opacity: 0%}
+        100%{opacity: 0%}
+    }
+    @keyframes port3{
+        0%{opacity: 0%}
+        39%{opacity: 0%}
+        40%{opacity: 100%}
+        60%{opacity: 100%}
+        61%{opacity: 0%}
+        100%{opacity: 0%}
+    }
+        @keyframes port4{
+        0%{opacity: 0%}
+        59%{opacity: 0%}
+        60%{opacity: 100%}
+        80%{opacity: 100%}
+        81%{opacity: 0%}
+        100%{opacity: 0%}
+    }
+    @keyframes port5{
+        0%{opacity: 0%}
+        79%{opacity: 0%}
+        80%{opacity: 100%}
+        100%{opacity: 100%}
+    }
+    #arrow {
+        position: fixed;
+        left: 299909099%;
+    }
+    #name1 {
+        color: #1f3b4e;
+        animation-name: name1;
+        animation-delay: 0s;
+        animation-duration: 2s;
+}
+@keyframes name1{
+    1%{opacity: 0;}
+    10%{opacity: 0;}
+    100%{opacity: 100}
+        }
+    #name2 {
+        color: #1f3b4e;
+        animation-name: name2;
+        animation-delay: 0s;
+        animation-duration: 2.5s;
+}
+@keyframes name2{
+    1%{opacity: 0;}
+    30%{opacity: 0;}
+    100%{opacity: 100}
+        }
+    #name3 {
+        color: #1f3b4e;
+        animation-name: name3;
+        animation-delay: 0s;
+        animation-duration: 3s;
+}
+@keyframes name3{
+    1%{opacity: 0;}
+    50%{opacity: 0;}
+    100%{opacity: 100}
+        }
+    #name4 {
+        color: #1f3b4e;
+        animation-name: name4;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name4{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name5 {
+        color: #1f3b4e;
+        animation-name: name5;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name5{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name6 {
+        color: #1f3b4e;
+        animation-name: name6;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name6{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name7 {
+        color: #1f3b4e;
+        animation-name: name7;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name7{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name8 {
+        color: #1f3b4e;
+        animation-name: name8;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name8{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name9 {
+        color: #1f3b4e;
+        animation-name: name9;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name9{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name10 {
+        color: #1f3b4e;
+        animation-name: name10;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name10{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+p {
+    font-family: "Rubik Broken Fax", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 77px;
+    color: #1f3b4e;
+    text-align: left;
+    z-index: 39;
+    padding-top: 80px;
+    transform: translate(-43%);
+    position: fixed;
+    left: 44%;
+    margin-top: 80px;
+}
+#trees {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    opacity: 5%;
+    width: 100%;
+}
+.sidepanel {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 10599;
+    top: 0;
+    left: 0;
+    background-color: #1f3b4e;
+    overflow-x: hidden; 
+    padding-top: 60px;
+    transition: .5s;
+}
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #e8e4de;
+    display: block;
+    transition: 0.3s;
+    z-index: 1;
+}
+.sidepanel a:hover {
+    text-shadow: 4px 3px 6px #141414; 
+}
+.sidepanel .closebtn {
+    position: absolute;
+    top: 11px;
+    right: 25px;
+    font-size: 40px;
+    margin-left: 50px;
+}
+.openbtn {
+    font-size: 35px;
+    cursor: pointer;
+    background-color: #1f3b4e;
+    color: #e8e4de;
+    padding: 6px 15px;
+    border: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    border-radius: 4px;
+    z-index: 700;
+    box-shadow: 4px 3px 14px #2c2c2c;
+}
+.openbtn:hover {
+    box-shadow: 4px 3px 14px #2c2c2c;
+}
+.container{
+    z-index: 118;
+    width: 100%;
+    position: absolute;
+    top: 92%;
+    left: 0;
+    right: 0;
+    background-color: #d53e3e;
+    padding-bottom: 46px;
+    animation-name: together;
+    animation-delay: 4s;
+    animation-duration: 8s;
+    height: 100000px;
+}
+@keyframes together{
+    10%{top: 88%;}
+    20%{top: 92%;}
+    30%{top: 88%;}
+    40%{top: 92%;}
+}
+}
+@media screen and (min-width: 380px){
+body{
+    width: 98%;
+    margin: auto;
+    background-color: #e8e4de;
+}
+        h6{
+        font-size: 2.3vw;
+        color: #36688a;
+        margin-left: 39%;
+        text-align: justify;
+        padding: 4%;
+        margin-top: -23px;
+        line-height: 3.2vw;
+    }
+    h3{
+        margin-left: 39%;
+        margin-top: 10px;
+        font-size: 16px;
+        color: #1f3b4e;
+        text-align: center;
+    }
+        #welcome{
+        background-color: #e8e4de;
+        width: 90%;
+        height: 36vw;
+        float: right;
+        margin-right: 5%;
+        margin-left: 0;
+        margin-top: 8%;
+    }
+        #portrait1{
+        position: absolute;
+        width: 35%;
+        margin: 5%;
+        animation-name: port1;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+    #portrait3{
+        position: absolute;
+        width: 35%;
+        margin: 5%;
+        animation-name: port3;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+     #portrait4{
+        position: absolute;
+        width: 35%;
+        margin: 5%;
+        animation-name: port4;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+    #portrait5{
+        position: absolute;
+        width: 35%;
+        margin: 5%;
+        animation-name: port5;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+    #portrait2{
+        position: absolute;
+        width: 35%;
+        margin: 5%;
+        animation-name: port2;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes port1{
+        0%{opacity: 100%}
+        20%{opacity: 100%}
+        21%{opacity: 0%}
+        100%{opacity: 0%}
+    }
+        @keyframes port2{
+        0%{opacity: 0%}
+        19%{opacity: 0%}
+        20%{opacity: 100%}
+        40%{opacity: 100%}
+        41%{opacity: 0%}
+        100%{opacity: 0%}
+    }
+    @keyframes port3{
+        0%{opacity: 0%}
+        39%{opacity: 0%}
+        40%{opacity: 100%}
+        60%{opacity: 100%}
+        61%{opacity: 0%}
+        100%{opacity: 0%}
+    }
+        @keyframes port4{
+        0%{opacity: 0%}
+        59%{opacity: 0%}
+        60%{opacity: 100%}
+        80%{opacity: 100%}
+        81%{opacity: 0%}
+        100%{opacity: 0%}
+    }
+    @keyframes port5{
+        0%{opacity: 0%}
+        79%{opacity: 0%}
+        80%{opacity: 100%}
+        100%{opacity: 100%}
+    }
+    #arrow {
+position: fixed;
+        left: 299909099%;
+    }
+    #name1 {
+        color: #1f3b4e;
+        animation-name: name1;
+        animation-delay: 0s;
+        animation-duration: 2s;
+}
+@keyframes name1{
+    1%{opacity: 0;}
+    10%{opacity: 0;}
+    100%{opacity: 100}
+        }
+    #name2 {
+        color: #1f3b4e;
+        animation-name: name2;
+        animation-delay: 0s;
+        animation-duration: 2.5s;
+}
+@keyframes name2{
+    1%{opacity: 0;}
+    30%{opacity: 0;}
+    100%{opacity: 100}
+        }
+    #name3 {
+        color: #1f3b4e;
+        animation-name: name3;
+        animation-delay: 0s;
+        animation-duration: 3s;
+}
+@keyframes name3{
+    1%{opacity: 0;}
+    50%{opacity: 0;}
+    100%{opacity: 100}
+        }
+    #name4 {
+        color: #1f3b4e;
+        animation-name: name4;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name4{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name5 {
+        color: #1f3b4e;
+        animation-name: name5;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name5{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name6 {
+        color: #1f3b4e;
+        animation-name: name6;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name6{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name7 {
+        color: #1f3b4e;
+        animation-name: name7;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name7{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name8 {
+        color: #1f3b4e;
+        animation-name: name8;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name8{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name9 {
+        color: #1f3b4e;
+        animation-name: name9;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name9{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name10 {
+        color: #1f3b4e;
+        animation-name: name10;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name10{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+p {
+    font-family: "Rubik Broken Fax", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 89px;
+    color: #1f3b4e;
+    text-align: left;
+    z-index: 39;
+    padding-top: 80px;
+    transform: translate(-43%);
+    position: fixed;
+    left: 44%;
+    margin-top: 80px;
+}
+#trees {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    opacity: 5%;
+    width: 100%;
+}
+.sidepanel {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 10995;
+    top: 0;
+    left: 0;
+    background-color: #1f3b4e;
+    overflow-x: hidden; 
+    padding-top: 60px;
+    transition: .5s;
+}
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #e8e4de;
+    display: block;
+    transition: 0.3s;
+    z-index: 1;
+}
+.sidepanel a:hover {
+    text-shadow: 4px 3px 6px #141414; 
+}
+.sidepanel .closebtn {
+    position: absolute;
+    top: 11px;
+    right: 25px;
+    font-size: 40px;
+    margin-left: 50px;
+}
+.openbtn {
+    font-size: 35px;
+    cursor: pointer;
+    background-color: #1f3b4e;
+    color: #e8e4de;
+    padding: 6px 15px;
+    border: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    border-radius: 4px;
+    z-index: 700;
+    box-shadow: 4px 3px 14px #2c2c2c;
+}
+.openbtn:hover {
+    box-shadow: 4px 3px 14px #2c2c2c;
+}
+.container{
+    z-index: 118;
+    width: 100%;
+    position: absolute;
+    top: 92%;
+    left: 0;
+    right: 0;
+    background-color: #7ef2ff;
+    padding-bottom: 46px;
+    animation-name: together;
+    animation-delay: 4s;
+    animation-duration: 8s;
+    height: 100000px;
+}
+@keyframes together{
+    10%{top: 88%;}
+    20%{top: 92%;}
+    30%{top: 88%;}
+    40%{top: 92%;}
+}
+}
+@media screen and (min-width: 450px){
+body{
+    width: 98%;
+    margin: auto;
+    background-color: #e8e4de;
+}
+     h6{
+        font-size: 2.3vw;
+        color: #36688a;
+        margin-left: 39%;
+        text-align: justify;
+        padding: 4%;
+        margin-top: -30px;
+        line-height: 3.3vw;
+    }
+    h3{
+        margin-left: 39%;
+        margin-top: 14px;
+        font-size: 3.9vw;
+        color: #1f3b4e;
+        text-align: center;
+    }
+        #welcome{
+        background-color: #e8e4de;
+        width: 90%;
+        height: 37vw;
+        float: right;
+        margin-right: 5%;
+        margin-left: 0;
+        margin-top: 8%;
+    }
+        #portrait1{
+        position: absolute;
+        width: 35%;
+        margin: 5%;
+        animation-name: port1;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+    #portrait3{
+        position: absolute;
+        width: 35%;
+        margin: 5%;
+        animation-name: port3;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+     #portrait4{
+        position: absolute;
+        width: 35%;
+        margin: 5%;
+        animation-name: port4;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+    #portrait5{
+        position: absolute;
+        width: 35%;
+        margin: 5%;
+        animation-name: port5;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+    #portrait2{
+        position: absolute;
+        width: 35%;
+        margin: 5%;
+        animation-name: port2;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes port1{
+        0%{opacity: 100%}
+        20%{opacity: 100%}
+        21%{opacity: 0%}
+        100%{opacity: 0%}
+    }
+        @keyframes port2{
+        0%{opacity: 0%}
+        19%{opacity: 0%}
+        20%{opacity: 100%}
+        40%{opacity: 100%}
+        41%{opacity: 0%}
+        100%{opacity: 0%}
+    }
+    @keyframes port3{
+        0%{opacity: 0%}
+        39%{opacity: 0%}
+        40%{opacity: 100%}
+        60%{opacity: 100%}
+        61%{opacity: 0%}
+        100%{opacity: 0%}
+    }
+        @keyframes port4{
+        0%{opacity: 0%}
+        59%{opacity: 0%}
+        60%{opacity: 100%}
+        80%{opacity: 100%}
+        81%{opacity: 0%}
+        100%{opacity: 0%}
+    }
+    @keyframes port5{
+        0%{opacity: 0%}
+        79%{opacity: 0%}
+        80%{opacity: 100%}
+        100%{opacity: 100%}
+    }
+    #arrow {
+position: fixed;
+        left: 299909099%;
+    }
+    #name1 {
+        color: #1f3b4e;
+        animation-name: name1;
+        animation-delay: 0s;
+        animation-duration: 2s;
+}
+@keyframes name1{
+    1%{opacity: 0;}
+    10%{opacity: 0;}
+    100%{opacity: 100}
+        }
+    #name2 {
+        color: #1f3b4e;
+        animation-name: name2;
+        animation-delay: 0s;
+        animation-duration: 2.5s;
+}
+@keyframes name2{
+    1%{opacity: 0;}
+    30%{opacity: 0;}
+    100%{opacity: 100}
+        }
+    #name3 {
+        color: #1f3b4e;
+        animation-name: name3;
+        animation-delay: 0s;
+        animation-duration: 3s;
+}
+@keyframes name3{
+    1%{opacity: 0;}
+    50%{opacity: 0;}
+    100%{opacity: 100}
+        }
+    #name4 {
+        color: #1f3b4e;
+        animation-name: name4;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name4{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name5 {
+        color: #1f3b4e;
+        animation-name: name5;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name5{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name6 {
+        color: #1f3b4e;
+        animation-name: name6;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name6{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name7 {
+        color: #1f3b4e;
+        animation-name: name7;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name7{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name8 {
+        color: #1f3b4e;
+        animation-name: name8;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name8{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name9 {
+        color: #1f3b4e;
+        animation-name: name9;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name9{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name10 {
+        color: #1f3b4e;
+        animation-name: name10;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name10{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+p {
+    font-family: "Rubik Broken Fax", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 111px;
+    color: #1f3b4e;
+    text-align: left;
+    z-index: 39;
+    padding-top: 80px;
+    transform: translate(-43%);
+    position: fixed;
+    left: 44%;
+    margin-top: 80px;
+}
+#trees {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    opacity: 5%;
+    width: 100%;
+}
+.sidepanel {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 10599;
+    top: 0;
+    left: 0;
+    background-color: #1f3b4e;
+    overflow-x: hidden; 
+    padding-top: 60px;
+    transition: .5s;
+}
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #e8e4de;
+    display: block;
+    transition: 0.3s;
+    z-index: 1;
+}
+.sidepanel .closebtn {
+    position: absolute;
+    top: 11px;
+    right: 25px;
+    font-size: 40px;
+    margin-left: 50px;
+}
+.openbtn {
+    font-size: 35px;
+    cursor: pointer;
+    background-color: #1f3b4e;
+    color: #e8e4de;
+    padding: 6px 15px;
+    border: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    border-radius: 4px;
+    z-index: 700;
+    box-shadow: 4px 3px 14px #2c2c2c;
+}
+.openbtn:hover {
+    box-shadow: 4px 3px 14px #2c2c2c;
+}
+.container{
+    z-index: 118;
+    width: 100%;
+    position: absolute;
+    top: 92%;
+    left: 0;
+    right: 0;
+    background-color: #e1ef5f;
+    padding-bottom: 46px;
+    animation-name: together;
+    animation-delay: 4s;
+    animation-duration: 8s;
+    height: 100000px;
+}
+@keyframes together{
+    10%{top: 88%;}
+    20%{top: 92%;}
+    30%{top: 88%;}
+    40%{top: 92%;}
+}
+}
+@media screen and (min-width: 580px){
+body{
+    width: 98%;
+    margin: auto;
+    background-color: #e8e4de;
+}
+    #arrow {
+position: fixed;
+        left: 299909099%;
+    }
+    #name1 {
+        color: #1f3b4e;
+        animation-name: name1;
+        animation-delay: 0s;
+        animation-duration: 2s;
+}
+@keyframes name1{
+    1%{opacity: 0;}
+    10%{opacity: 0;}
+    100%{opacity: 100}
+        }
+    #name2 {
+        color: #1f3b4e;
+        animation-name: name2;
+        animation-delay: 0s;
+        animation-duration: 2.5s;
+}
+@keyframes name2{
+    1%{opacity: 0;}
+    30%{opacity: 0;}
+    100%{opacity: 100}
+        }
+    #name3 {
+        color: #1f3b4e;
+        animation-name: name3;
+        animation-delay: 0s;
+        animation-duration: 3s;
+}
+@keyframes name3{
+    1%{opacity: 0;}
+    50%{opacity: 0;}
+    100%{opacity: 100}
+        }
+    #name4 {
+        color: #1f3b4e;
+        animation-name: name4;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name4{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name5 {
+        color: #1f3b4e;
+        animation-name: name5;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name5{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name6 {
+        color: #1f3b4e;
+        animation-name: name6;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name6{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name7 {
+        color: #1f3b4e;
+        animation-name: name7;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name7{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name8 {
+        color: #1f3b4e;
+        animation-name: name8;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name8{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name9 {
+        color: #1f3b4e;
+        animation-name: name9;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name9{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name10 {
+        color: #1f3b4e;
+        animation-name: name10;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name10{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+p {
+    font-family: "Rubik Broken Fax", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 120px;
+    color: #1f3b4e;
+    text-align: left;
+    z-index: 39;
+    padding-top: 80px;
+    transform: translate(-43%);
+    position: fixed;
+    left: 46%;
+    margin-top: 80px;
+}
+#trees {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    opacity: 5%;
+    width: 100%;
+}
+.sidepanel {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 10599;
+    top: 0;
+    left: 0;
+    background-color: #1f3b4e;
+    overflow-x: hidden; 
+    padding-top: 60px;
+    transition: .5s;
+}
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #e8e4de;
+    display: block;
+    transition: 0.3s;
+    z-index: 1;
+}
+.sidepanel a:hover {
+    color: #f2e8c0;
+    font-size: 25.5px;
+    text-shadow: 4px 3px 6px #000000; 
+}
+.sidepanel .closebtn {
+    position: absolute;
+    top: 11px;
+    right: 25px;
+    font-size: 40px;
+    margin-left: 50px;
+}
+.sidepanel .closebtn:hover {
+    position: absolute;
+    top: 11px;
+    right: 25px;
+    font-size: 40px;
+    margin-left: 50px;
+}
+.openbtn {
+    font-size: 35px;
+    cursor: pointer;
+    background-color: #1f3b4e;
+    color: #e8e4de;
+    padding: 6px 15px;
+    border: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    border-radius: 4px;
+    z-index: 700;
+    box-shadow: 4px 3px 14px #2c2c2c;
+}
+.openbtn:hover {
+    box-shadow: 4px 3px 14px #2c2c2c;
+}
+.container{
+    z-index: 118;
+    width: 100%;
+    position: absolute;
+    top: 92%;
+    left: 0;
+    right: 0;
+    background-color: #36688a;
+    padding-bottom: 46px;
+    animation-name: together;
+    animation-delay: 4s;
+    animation-duration: 8s;
+    height: 100000px;
+}
+@keyframes together{
+    10%{top: 88%;}
+    20%{top: 92%;}
+    30%{top: 88%;}
+    40%{top: 92%;}
+}
+    #portrait1{
+        position: absolute;
+        width: 35%;
+        margin: 5%;
+        animation-name: port1;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+        box-shadow: 4px 4px 10px #343434;
+    }
+    #portrait3{
+        position: absolute;
+        width: 35%;
+        margin: 5%;
+        animation-name: port3;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+        box-shadow: 4px 4px 10px #343434;
+    }
+     #portrait4{
+        position: absolute;
+        width: 35%;
+        margin: 5%;
+        animation-name: port4;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+        box-shadow: 4px 4px 10px #343434;
+    }
+    #portrait5{
+        position: absolute;
+        width: 35%;
+        margin: 5%;
+        animation-name: port5;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+        box-shadow: 4px 4px 10px #343434;
+    }
+    #portrait2{
+        position: absolute;
+        width: 35%;
+        margin: 5%;
+        animation-name: port2;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+        box-shadow: 4px 4px 10px #343434;
+    }
+    @keyframes port1{
+        0%{opacity: 100%}
+        20%{opacity: 100%}
+        21%{opacity: 0%}
+        100%{opacity: 0%}
+    }
+        @keyframes port2{
+        0%{opacity: 0%}
+        19%{opacity: 0%}
+        20%{opacity: 100%}
+        40%{opacity: 100%}
+        41%{opacity: 0%}
+        100%{opacity: 0%}
+    }
+    @keyframes port3{
+        0%{opacity: 0%}
+        39%{opacity: 0%}
+        40%{opacity: 100%}
+        60%{opacity: 100%}
+        61%{opacity: 0%}
+        100%{opacity: 0%}
+    }
+        @keyframes port4{
+        0%{opacity: 0%}
+        59%{opacity: 0%}
+        60%{opacity: 100%}
+        80%{opacity: 100%}
+        81%{opacity: 0%}
+        100%{opacity: 0%}
+    }
+    @keyframes port5{
+        0%{opacity: 0%}
+        79%{opacity: 0%}
+        80%{opacity: 100%}
+        100%{opacity: 100%}
+    }
+    #welcome{
+        background-color: #e8e4de;
+        width: 90%;
+        height: 37vw;
+        float: right;
+        margin-right: 5%;
+        margin-left: 0;
+        margin-top: 8%;
+    }
+}
+@media screen and (min-width: 740px){
+body{
+    width: 98%;
+    margin: auto;
+    background-color: #e8e4de;
+}
+    h6{
+        font-size: 2.3vw;
+        color: #36688a;
+        margin-left: 39%;
+        text-align: justify;
+        padding: 4%;
+        margin-top: -54px;
+        line-height: 3.5vw;
+    }
+    h3{
+        margin-left: 39%;
+        margin-top: 14px;
+        font-size: 32px;
+        color: #1f3b4e;
+        text-align: center;
+    }
+        #welcome{
+        background-color: #e8e4de;
+        width: 90%;
+        height: 37vw;
+        float: right;
+        margin-right: 5%;
+        margin-left: 0;
+        margin-top: 8%;
+    }
+        #portrait1{
+        position: absolute;
+        width: 35%;
+        margin: 5%;
+        animation-name: port1;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+    #portrait3{
+        position: absolute;
+        width: 35%;
+        margin: 5%;
+        animation-name: port3;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+     #portrait4{
+        position: absolute;
+        width: 35%;
+        margin: 5%;
+        animation-name: port4;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+    #portrait5{
+        position: absolute;
+        width: 35%;
+        margin: 5%;
+        animation-name: port5;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+    #portrait2{
+        position: absolute;
+        width: 35%;
+        margin: 5%;
+        animation-name: port2;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes port1{
+        0%{opacity: 100%}
+        20%{opacity: 100%}
+        21%{opacity: 0%}
+        100%{opacity: 0%}
+    }
+        @keyframes port2{
+        0%{opacity: 0%}
+        19%{opacity: 0%}
+        20%{opacity: 100%}
+        40%{opacity: 100%}
+        41%{opacity: 0%}
+        100%{opacity: 0%}
+    }
+    @keyframes port3{
+        0%{opacity: 0%}
+        39%{opacity: 0%}
+        40%{opacity: 100%}
+        60%{opacity: 100%}
+        61%{opacity: 0%}
+        100%{opacity: 0%}
+    }
+        @keyframes port4{
+        0%{opacity: 0%}
+        59%{opacity: 0%}
+        60%{opacity: 100%}
+        80%{opacity: 100%}
+        81%{opacity: 0%}
+        100%{opacity: 0%}
+    }
+    @keyframes port5{
+        0%{opacity: 0%}
+        79%{opacity: 0%}
+        80%{opacity: 100%}
+        100%{opacity: 100%}
+    }
+    #arrow {
+        transform: rotate(90deg);
+        width: 523px;
+        font-size: 138px;
+        position: fixed;
+        top: 210px;
+        left: 50%;
+        animation-name: arrow;
+        animation-duration: 4s;
+    }
+    @keyframes arrow {
+        0% {position: fixed;
+            top: -100%;}
+        60%  {position: fixed;
+            top: -100%;}
+        88%{position: fixed;
+        top: 248px;}
+        100%{position: fixed;
+            top: 193px;}
+    }
+    #tug1 {
+        animation-name: tug1;
+        animation-duration: 7s;
+    }
+        #tug2 {
+        animation-name: tug2;
+        animation-duration: 6.25s;
+    }
+        #tug3 {
+        animation-name: tug3;
+        animation-duration: 5.5s;
+    }
+    #tug1:hover {
+        color: rgba(232, 228, 222, 0);
+        text-shadow: 3px 3px 32px #1f3b4e;
+        transition: 0.2s;
+    }
+        #tug2:hover {
+        color: rgba(232, 228, 222, 0);
+        text-shadow: 3px 3px 32px #1f3b4e;
+        transition: 0.2s;
+    }
+        #tug3:hover {
+        color: rgba(232, 228, 222, 0);
+        text-shadow: 3px 3px 32px #1f3b4e;
+        transition: 0.2s;
+    }
+        #tug4:hover {
+        color: rgba(232, 228, 222, 0);
+        text-shadow: 3px 3px 32px #1f3b4e;
+        transition: 0.2s;
+    }
+    @keyframes tug1{
+        0%{opacity: 0}
+        70%{opacity: 0}
+        90%{opacity: 100}
+    }
+        @keyframes tug2{
+        0%{opacity: 0}
+        70%{opacity: 0}
+        90%{opacity: 100}
+    }
+        @keyframes tug3{
+        0%{opacity: 0}
+        70%{opacity: 0}
+        90%{opacity: 100}
+    }
+    #name1 {
+        color: #1f3b4e;
+        animation-name: name1;
+        animation-delay: 0s;
+        animation-duration: 2s;
+}
+    #name1:hover {
+        color: rgba(232, 228, 222, 0);
+        text-shadow: 3px 3px 32px #1f3b4e;
+        transition: 0.2s;
+}
+    #name2:hover {
+        color: rgba(232, 228, 222, 0);
+        text-shadow: 3px 3px 32px #1f3b4e;
+        transition: 0.2s;
+}
+    #name3:hover {
+        color: #1f3b4e00;
+        text-shadow: 3px 3px 32px #1f3b4e;
+        transition: 0.2s;
+}
+    #name4:hover {
+        color: #c5a317;
+        text-shadow: 3px 3px 32px #e8e4de;
+}
+    #name6:hover {
+        color: rgba(232, 228, 222, 0);
+        animation-name: jump;
+}
+@keyframes jump {}
+    #name7:hover {
+        color: rgba(232, 228, 222, 0);
+        animation-name: jump;
+}
+    #name8:hover {
+        color: rgba(232, 228, 222, 0);
+        animation-name: jump;
+}
+    #name9:hover {
+        color: rgba(232, 228, 222, 0);
+        animation-name: jump;
+}
+    #name10:hover {
+        color: rgba(232, 228, 222, 0);
+        animation-name: jump;
+}
+@keyframes name1{
+    1%{opacity: 0;}
+    10%{opacity: 0;}
+    100%{opacity: 100}
+        }
+    #name2 {
+        color: #1f3b4e;
+        animation-name: name2;
+        animation-delay: 0s;
+        animation-duration: 2.5s;
+}
+@keyframes name2{
+    1%{opacity: 0;}
+    30%{opacity: 0;}
+    100%{opacity: 100}
+        }
+    #name3 {
+        color: #1f3b4e;
+        animation-name: name3;
+        animation-delay: 0s;
+        animation-duration: 3s;
+}
+@keyframes name3{
+    1%{opacity: 0;}
+    50%{opacity: 0;}
+    100%{opacity: 100}
+        }
+    #name4 {
+        color: #1f3b4e;
+        animation-name: name4;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name4{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name5 {
+        color: #1f3b4e;
+        animation-name: name5;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name5{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name6 {
+        color: #1f3b4e;
+        animation-name: name6;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name6{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name7 {
+        color: #1f3b4e;
+        animation-name: name7;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name7{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name8 {
+        color: #1f3b4e;
+        animation-name: name8;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name8{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name9 {
+        color: #1f3b4e;
+        animation-name: name9;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name9{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name10 {
+        color: #1f3b4e;
+        animation-name: name10;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name10{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+p {
+    font-family: "Rubik Broken Fax", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 138px;
+    color: #1f3b4e;
+    text-align: left;
+    margin-top: 128px;
+    position: fixed;
+    left: 38%;
+    padding: 0;
+    transform: translate(-43%);
+}
+.sidepanel {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 9699;
+    top: 0;
+    left: 0;
+    background-color: #1f3b4e;
+    overflow-x: hidden; 
+    padding-top: 60px;
+    transition: .5s;
+}
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 29px;
+    color: #e8e4de;
+    display: block;
+    transition: 0.3s;
+    z-index: 100;
+}
+.sidepanel a:hover {
+    color: #f2e8c0;
+    font-size: 29.5px;
+    text-shadow: 4px 3px 6px #000000; 
+}
+.sidepanel .closebtn {
+    position: absolute;
+    top: 11px;
+    right: 25px;
+    font-size: 40px;
+    margin-left: 50px;
+}
+.sidepanel .closebtn:hover {
+    position: absolute;
+    top: 10px;
+    right: 24px;
+    font-size: 42px;
+    margin-left: 50px;
+}
+.openbtn {
+    font-size: 35px;
+    cursor: pointer;
+    background-color: #1f3b4e;
+    color: #e8e4de;
+    padding: 6px 15px;
+    border: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    border-radius: 4px;
+    z-index: 70;
+    box-shadow: 4px 3px 14px #2c2c2c;
+}
+.openbtn:hover {
+  font-size: 37px;
+    cursor: pointer;
+    color: #e8e4de;
+    padding: 6px 15px;
+    border: none;
+    position: fixed;
+    top: 14px;
+    left: 14px;
+    border-radius: 4px;
+    box-shadow: 4px 3px 14px #2c2c2c;
+}
+.container{
+    z-index: 55;
+    width: 100%;
+    position: absolute;
+    top: 92%;
+    left: 0;
+    right: 0;
+    background-color: #36688a;
+    padding-bottom: 46px;
+    animation-name: together;
+    animation-delay: 4s;
+    animation-duration: 8s;
+    height: 100000px;
+}
+@keyframes together{
+    10%{top: 88%;}
+    20%{top: 92%;}
+    30%{top: 88%;}
+    40%{top: 92%;}
+}
+}
+@media screen and (min-width: 1000px){
+body{
+    width: 98%;
+    margin: auto;
+    background-color: #e8e4de;
+}
+     h6{
+        font-size: 2vw;
+        color: #36688a;
+        margin-left: 34%;
+        text-align: justify;
+        padding: 3%;
+        margin-top: -75px;
+        line-height: 3.6vw;
+    }
+    h3{
+        margin-left: 34%;
+        margin-top: 14px;
+        font-size: 4.6vw;
+        color: #1f3b4e;
+        text-align: center;
+    }
+        #welcome{
+        background-color: #e8e4de;
+        width: 90%;
+        height: 31vw;
+        float: right;
+        margin-right: 5%;
+        margin-left: 0;
+        margin-top: 8%;
+    }
+        #portrait1{
+        position: absolute;
+        width: 30%;
+        margin: 5%;
+        animation-name: port1;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+    #portrait3{
+        position: absolute;
+        width: 30%;
+        margin: 5%;
+        animation-name: port3;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+     #portrait4{
+        position: absolute;
+        width: 30%;
+        margin: 5%;
+        animation-name: port4;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+    #portrait5{
+        position: absolute;
+        width: 30%;
+        margin: 5%;
+        animation-name: port5;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+    #portrait2{
+        position: absolute;
+        width: 30%;
+        margin: 5%;
+        animation-name: port2;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes port1{
+        0%{opacity: 100%}
+        20%{opacity: 100%}
+        21%{opacity: 0%}
+        100%{opacity: 0%}
+    }
+        @keyframes port2{
+        0%{opacity: 0%}
+        19%{opacity: 0%}
+        20%{opacity: 100%}
+        40%{opacity: 100%}
+        41%{opacity: 0%}
+        100%{opacity: 0%}
+    }
+    @keyframes port3{
+        0%{opacity: 0%}
+        39%{opacity: 0%}
+        40%{opacity: 100%}
+        60%{opacity: 100%}
+        61%{opacity: 0%}
+        100%{opacity: 0%}
+    }
+        @keyframes port4{
+        0%{opacity: 0%}
+        59%{opacity: 0%}
+        60%{opacity: 100%}
+        80%{opacity: 100%}
+        81%{opacity: 0%}
+        100%{opacity: 0%}
+    }
+    @keyframes port5{
+        0%{opacity: 0%}
+        79%{opacity: 0%}
+        80%{opacity: 100%}
+        100%{opacity: 100%}
+    }
+    #arrow {
+        transform: rotate(90deg);
+        width: 523px;
+        font-size: 170px;
+        position: fixed;
+        top: 193px;
+        left: 60%;
+        animation-name: arrow;
+        animation-duration: 4s;
+    }
+    @keyframes arrow {
+        0% {position: fixed;
+            top: -100%;}
+        60%  {position: fixed;
+            top: -100%;}
+        88%{position: fixed;
+        top: 248px;}
+        100%{position: fixed;
+            top: 193px;}
+    }
+    #tug1 {
+        animation-name: tug1;
+        animation-duration: 7s;
+    }
+        #tug2 {
+        animation-name: tug2;
+        animation-duration: 6.25s;
+    }
+        #tug3 {
+        animation-name: tug3;
+        animation-duration: 5.5s;
+    }
+    #tug1:hover {
+        color: rgba(232, 228, 222, 0);
+        font-size: 170px;
+        text-shadow: 3px 3px 32px #1f3b4e;
+        transition: 0.2s;
+    }
+        #tug2:hover {
+        color: rgba(232, 228, 222, 0);
+        font-size: 170px;
+        text-shadow: 3px 3px 32px #1f3b4e;
+        transition: 0.2s;
+    }
+        #tug3:hover {
+        color: rgba(232, 228, 222, 0);
+        font-size: 170px;
+        text-shadow: 3px 3px 32px #1f3b4e;
+        transition: 0.2s;
+    }
+        #tug4:hover {
+        color: rgba(232, 228, 222, 0);
+        font-size: 170px;
+        text-shadow: 3px 3px 32px #1f3b4e;
+        transition: 0.2s;
+    }
+    @keyframes tug1{
+        0%{opacity: 0}
+        70%{opacity: 0}
+        90%{opacity: 100}
+    }
+        @keyframes tug2{
+        0%{opacity: 0}
+        70%{opacity: 0}
+        90%{opacity: 100}
+    }
+        @keyframes tug3{
+        0%{opacity: 0}
+        70%{opacity: 0}
+        90%{opacity: 100}
+    }
+    #name1 {
+        color: #1f3b4e;
+        animation-name: name1;
+        animation-delay: 0s;
+        animation-duration: 2s;
+}
+    #name1:hover {
+        color: rgba(232, 228, 222, 0);
+        font-size: 170px;
+        text-shadow: 3px 3px 32px #1f3b4e;
+        transition: 0.2s;
+}
+    #name2:hover {
+        color: rgba(232, 228, 222, 0);
+        font-size: 170px;
+        text-shadow: 3px 3px 32px #1f3b4e;
+        transition: 0.2s;
+}
+    #name3:hover {
+        color: #1f3b4e00;
+        font-size: 170px;
+        text-shadow: 3px 3px 32px #1f3b4e;
+        transition: 0.2s;
+}
+    #name4:hover {
+        color: #c5a317;
+        font-size: 170px;
+        text-shadow: 3px 3px 32px #e8e4de;
+}
+    #name6:hover {
+        color: rgba(232, 228, 222, 0);
+        font-size: 170px;
+        animation-name: jump;
+}
+@keyframes jump {}
+    #name7:hover {
+        color: rgba(232, 228, 222, 0);
+        font-size: 170px;
+        animation-name: jump;
+}
+    #name8:hover {
+        color: rgba(232, 228, 222, 0);
+        font-size: 170px;
+        animation-name: jump;
+}
+    #name9:hover {
+        color: rgba(232, 228, 222, 0);
+        font-size: 170px;
+        animation-name: jump;
+}
+    #name10:hover {
+        color: rgba(232, 228, 222, 0);
+        font-size: 170px;
+        animation-name: jump;
+}
+@keyframes name1{
+    1%{opacity: 0;}
+    10%{opacity: 0;}
+    100%{opacity: 100}
+        }
+    #name2 {
+        color: #1f3b4e;
+        animation-name: name2;
+        animation-delay: 0s;
+        animation-duration: 2.5s;
+}
+@keyframes name2{
+    1%{opacity: 0;}
+    30%{opacity: 0;}
+    100%{opacity: 100}
+        }
+    #name3 {
+        color: #1f3b4e;
+        animation-name: name3;
+        animation-delay: 0s;
+        animation-duration: 3s;
+}
+@keyframes name3{
+    1%{opacity: 0;}
+    50%{opacity: 0;}
+    100%{opacity: 100}
+        }
+    #name4 {
+        color: #1f3b4e;
+        animation-name: name4;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name4{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name5 {
+        color: #1f3b4e;
+        animation-name: name5;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name5{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name6 {
+        color: #1f3b4e;
+        animation-name: name6;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name6{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name7 {
+        color: #1f3b4e;
+        animation-name: name7;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name7{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name8 {
+        color: #1f3b4e;
+        animation-name: name8;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name8{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name9 {
+        color: #1f3b4e;
+        animation-name: name9;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name9{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+    #name10 {
+        color: #1f3b4e;
+        animation-name: name10;
+        animation-delay: 0s;
+        animation-duration: 4s;
+}
+@keyframes name10{
+    0%{opacity: 0;}
+    60%{opacity: 0;}
+    100%{opacity: 100;}
+}
+p {
+    font-family: "Rubik Broken Fax", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 170px;
+    color: #1f3b4e;
+    text-align: left;
+    margin-top: 56px;
+    position: fixed;
+    left: 41%;
+    padding: 0;
+    transform: translate(-43%);
+}
+.sidepanel {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 3930;
+    top: 0;
+    left: 0;
+    background-color: #1f3b4e;
+    overflow-x: hidden; 
+    padding-top: 60px;
+    transition: .5s;
+}
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 29px;
+    color: #e8e4de;
+    display: block;
+    transition: 0.3s;
+    z-index: 1;
+}
+.sidepanel a:hover {
+    color: #f2e8c0;
+    font-size: 29.5px;
+    text-shadow: 4px 3px 6px #000000; 
+}
+.sidepanel .closebtn {
+    position: absolute;
+    top: 6px;
+    right: 26px;
+    font-size: 45px;
+    margin-left: 50px;
+}
+.sidepanel .closebtn:hover {
+    position: absolute;
+    top: 6px;
+    right: 26px;
+    font-size: 45px;
+    margin-left: 50px;
+}
+.openbtn {
+    font-size: 38px;
+    cursor: pointer;
+    background-color: #1f3b4e;
+    color: #e8e4de;
+    padding: 6px 15px;
+    border: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    border-radius: 4px;
+    z-index: 700;
+     box-shadow: 4px 3px 14px #2c2c2c;
+}
+.openbtn:hover {
+  font-size: 38.5px;
+    cursor: pointer;
+    background-color: #1f3b4e;
+    color: #e8e4de;
+    padding: 6px 15px;
+    border: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    border-radius: 4px;
+    box-shadow: 4px 3px 14px #2c2c2c;
+}
+.container{
+    z-index: 118;
+    width: 100%;
+    position: absolute;
+    top: 92%;
+    left: 0;
+    right: 0;
+    background-color: #36688a;
+    padding-bottom: 46px;
+    animation-name: together;
+    animation-delay: 4s;
+    animation-duration: 8s;
+    height: 100000px;
+}
+@keyframes together{
+    10%{top: 88%;}
+    20%{top: 92%;}
+    30%{top: 88%;}
+    40%{top: 92%;}
+}
+}
