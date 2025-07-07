@@ -4,70 +4,98 @@ body{
     margin: auto;
     background-color: #e8e4de;
 }
-        h6{
-        font-size: 2.3vw;
+        #gall{
+        width: 100%;
+        background-color: red;
+        color: aliceblue;
+        z-index: 999%;
+        margin-top: 789px;
+        font-size: 9vw;
+        text-align: center;   
+    }
+     h6{
+        font-size: 5.3vw;
         color: #36688a;
-        margin-left: 39%;
+        background-color: #e8e4de;
+        margin-left: 4%;
         text-align: justify;
-        padding: 4%;
-        margin-top: -20px;
-        line-height: 3.2vw;
+        padding-top: 75px;
+        padding-left: 6%;
+        padding-right: 6%;
+        padding-bottom: 4%;
+        margin-top: -72px;
+        line-height: 1.5;
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
     }
     h3{
-        margin-left: 39%;
-        margin-top: 10px;
-        font-size: 13px;
+        margin-left: 55%;
+        margin-right: 17%;
+        margin-top: 13px;
+        line-height: 1.8;
+        font-size: 8.2vw;
         color: #1f3b4e;
-        text-align: center;
+        text-align: justify;
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
     }
         #welcome{
         background-color: #e8e4de;
         width: 90%;
-        height: 36vw;
+        height: 48vw;
         float: right;
         margin-right: 5%;
         margin-left: 0;
         margin-top: 8%;
     }
-        #portrait1{
+    #portrait1{
         position: absolute;
-        width: 35%;
+        width: 45%;
         margin: 5%;
         animation-name: port1;
         animation-duration: 25s;
         animation-iteration-count: infinite;
+        box-shadow: 4px 4px 10px #343434;
     }
     #portrait3{
         position: absolute;
-        width: 35%;
+        width: 45%;
         margin: 5%;
         animation-name: port3;
         animation-duration: 25s;
         animation-iteration-count: infinite;
+        box-shadow: 4px 4px 10px #343434;
     }
      #portrait4{
         position: absolute;
-        width: 35%;
+        width: 45%;
         margin: 5%;
         animation-name: port4;
         animation-duration: 25s;
         animation-iteration-count: infinite;
+        box-shadow: 4px 4px 10px #343434;
     }
     #portrait5{
         position: absolute;
-        width: 35%;
+        width: 45%;
         margin: 5%;
         animation-name: port5;
         animation-duration: 25s;
         animation-iteration-count: infinite;
+        box-shadow: 4px 4px 10px #343434;
     }
     #portrait2{
         position: absolute;
-        width: 35%;
+        width: 45%;
         margin: 5%;
         animation-name: port2;
         animation-duration: 25s;
         animation-iteration-count: infinite;
+        box-shadow: 4px 4px 10px #343434;
     }
     @keyframes port1{
         0%{opacity: 100%}
@@ -100,7 +128,8 @@ body{
         100%{opacity: 0%}
     }
     @keyframes port5{
-        0%{opacity: 0%}
+        0%{opacity: 100%}
+        2%{opacity: 0%}
         79%{opacity: 0%}
         80%{opacity: 100%}
         100%{opacity: 100%}
@@ -298,7 +327,7 @@ p {
     top: 92%;
     left: 0;
     right: 0;
-    background-color: #d53e3e;
+    background-color: #36688a;
     padding-bottom: 46px;
     animation-name: together;
     animation-delay: 4s;
@@ -318,70 +347,98 @@ body{
     margin: auto;
     background-color: #e8e4de;
 }
-        h6{
-        font-size: 2.3vw;
+    #gall{
+        width: 100%;
+        background-color: red;
+        color: aliceblue;
+        z-index: 999%;
+        margin-top: 789px;
+        font-size: 9vw;
+        text-align: center;   
+    }
+     h6{
+        font-size: 4.9vw;
         color: #36688a;
-        margin-left: 39%;
+        background-color: #e8e4de;
+        margin-left: 4%;
         text-align: justify;
-        padding: 4%;
-        margin-top: -23px;
-        line-height: 3.2vw;
+        padding-top: 61px;
+        padding-left: 6%;
+        padding-right: 6%;
+        padding-bottom: 4%;
+        margin-top: -75px;
+        line-height: 1.5;
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
     }
     h3{
-        margin-left: 39%;
-        margin-top: 10px;
-        font-size: 16px;
+        margin-left: 54%;
+        margin-right: 17%;
+        margin-top: 13px;
+        line-height: 1.8;
+        font-size: 8.9vw;
         color: #1f3b4e;
-        text-align: center;
+        text-align: justify;
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
     }
         #welcome{
         background-color: #e8e4de;
         width: 90%;
-        height: 36vw;
+        height: 48vw;
         float: right;
         margin-right: 5%;
         margin-left: 0;
         margin-top: 8%;
     }
-        #portrait1{
+    #portrait1{
         position: absolute;
-        width: 35%;
+        width: 45%;
         margin: 5%;
         animation-name: port1;
         animation-duration: 25s;
         animation-iteration-count: infinite;
+        box-shadow: 4px 4px 10px #343434;
     }
     #portrait3{
         position: absolute;
-        width: 35%;
+        width: 45%;
         margin: 5%;
         animation-name: port3;
         animation-duration: 25s;
         animation-iteration-count: infinite;
+        box-shadow: 4px 4px 10px #343434;
     }
      #portrait4{
         position: absolute;
-        width: 35%;
+        width: 45%;
         margin: 5%;
         animation-name: port4;
         animation-duration: 25s;
         animation-iteration-count: infinite;
+        box-shadow: 4px 4px 10px #343434;
     }
     #portrait5{
         position: absolute;
-        width: 35%;
+        width: 45%;
         margin: 5%;
         animation-name: port5;
         animation-duration: 25s;
         animation-iteration-count: infinite;
+        box-shadow: 4px 4px 10px #343434;
     }
     #portrait2{
         position: absolute;
-        width: 35%;
+        width: 45%;
         margin: 5%;
         animation-name: port2;
         animation-duration: 25s;
         animation-iteration-count: infinite;
+        box-shadow: 4px 4px 10px #343434;
     }
     @keyframes port1{
         0%{opacity: 100%}
@@ -414,7 +471,8 @@ body{
         100%{opacity: 0%}
     }
     @keyframes port5{
-        0%{opacity: 0%}
+        0%{opacity: 100%}
+        2%{opacity: 0%}
         79%{opacity: 0%}
         80%{opacity: 100%}
         100%{opacity: 100%}
@@ -612,12 +670,12 @@ p {
     top: 92%;
     left: 0;
     right: 0;
-    background-color: #7ef2ff;
+    background-color: #36688a;
     padding-bottom: 46px;
     animation-name: together;
     animation-delay: 4s;
     animation-duration: 8s;
-    height: 100000px;
+    height: 1000px;
 }
 @keyframes together{
     10%{top: 88%;}
@@ -633,69 +691,88 @@ body{
     background-color: #e8e4de;
 }
      h6{
-        font-size: 2.3vw;
+        font-size: 4.1vw;
         color: #36688a;
-        margin-left: 39%;
+        background-color: #e8e4de;
+        margin-left: 4%;
         text-align: justify;
-        padding: 4%;
-        margin-top: -30px;
-        line-height: 3.3vw;
+        padding-top: 61px;
+        padding-left: 6%;
+        padding-right: 6%;
+        padding-bottom: 4%;
+        margin-top: -84px;
+        line-height: 6.9vw;
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
     }
     h3{
-        margin-left: 39%;
-        margin-top: 14px;
-        font-size: 3.9vw;
+        margin-left: 54%;
+        margin-right: 17%;
+        margin-top: 17px;
+        line-height: 1.8;
+        font-size: 8.9vw;
         color: #1f3b4e;
-        text-align: center;
+        text-align: justify;
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
     }
         #welcome{
         background-color: #e8e4de;
         width: 90%;
-        height: 37vw;
+        height: 51vw;
         float: right;
         margin-right: 5%;
         margin-left: 0;
         margin-top: 8%;
     }
-        #portrait1{
+    #portrait1{
         position: absolute;
-        width: 35%;
+        width: 45%;
         margin: 5%;
         animation-name: port1;
         animation-duration: 25s;
         animation-iteration-count: infinite;
+        box-shadow: 4px 4px 10px #343434;
     }
     #portrait3{
         position: absolute;
-        width: 35%;
+        width: 45%;
         margin: 5%;
         animation-name: port3;
         animation-duration: 25s;
         animation-iteration-count: infinite;
+        box-shadow: 4px 4px 10px #343434;
     }
      #portrait4{
         position: absolute;
-        width: 35%;
+        width: 45%;
         margin: 5%;
         animation-name: port4;
         animation-duration: 25s;
         animation-iteration-count: infinite;
+        box-shadow: 4px 4px 10px #343434;
     }
     #portrait5{
         position: absolute;
-        width: 35%;
+        width: 45%;
         margin: 5%;
         animation-name: port5;
         animation-duration: 25s;
         animation-iteration-count: infinite;
+        box-shadow: 4px 4px 10px #343434;
     }
     #portrait2{
         position: absolute;
-        width: 35%;
+        width: 45%;
         margin: 5%;
         animation-name: port2;
         animation-duration: 25s;
         animation-iteration-count: infinite;
+        box-shadow: 4px 4px 10px #343434;
     }
     @keyframes port1{
         0%{opacity: 100%}
@@ -728,7 +805,8 @@ body{
         100%{opacity: 0%}
     }
     @keyframes port5{
-        0%{opacity: 0%}
+        0%{opacity: 100%}
+        2%{opacity: 0%}
         79%{opacity: 0%}
         80%{opacity: 100%}
         100%{opacity: 100%}
@@ -923,7 +1001,7 @@ p {
     top: 92%;
     left: 0;
     right: 0;
-    background-color: #e1ef5f;
+    background-color: #36688a;
     padding-bottom: 46px;
     animation-name: together;
     animation-delay: 4s;
@@ -943,6 +1021,32 @@ body{
     margin: auto;
     background-color: #e8e4de;
 }
+    h6{
+        font-size: 2.3vw;
+        color: #36688a;
+        margin-left: 39%;
+        text-align: justify;
+        padding: 4%;
+        margin-top: -39px;
+        line-height: 3.5vw;
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+    }
+    h3{
+        margin-left: 39%;
+        margin-top: 8px;
+        margin-right: 0;
+        line-height: 1.1;
+        font-size: 4.2vw;
+        color: #1f3b4e;
+        text-align: center;
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+    }
     #arrow {
 position: fixed;
         left: 299909099%;
@@ -1234,7 +1338,8 @@ p {
         100%{opacity: 0%}
     }
     @keyframes port5{
-        0%{opacity: 0%}
+        0%{opacity: 100%}
+        2%{opacity: 0%}
         79%{opacity: 0%}
         80%{opacity: 100%}
         100%{opacity: 100%}
@@ -1263,13 +1368,23 @@ body{
         padding: 4%;
         margin-top: -54px;
         line-height: 3.5vw;
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
     }
     h3{
         margin-left: 39%;
         margin-top: 14px;
-        font-size: 32px;
+        margin-right: 0;
+        line-height: 1.1;
+        font-size: 4.1vw;
         color: #1f3b4e;
         text-align: center;
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
     }
         #welcome{
         background-color: #e8e4de;
@@ -1351,7 +1466,8 @@ body{
         100%{opacity: 0%}
     }
     @keyframes port5{
-        0%{opacity: 0%}
+        0%{opacity: 100%}
+        2%{opacity: 0%}
         79%{opacity: 0%}
         80%{opacity: 100%}
         100%{opacity: 100%}
@@ -1687,13 +1803,23 @@ body{
         padding: 3%;
         margin-top: -75px;
         line-height: 3.6vw;
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
     }
     h3{
         margin-left: 34%;
         margin-top: 14px;
+        margin-right: 0;
+        line-height: 1.1;
         font-size: 4.6vw;
         color: #1f3b4e;
         text-align: center;
+       font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
     }
         #welcome{
         background-color: #e8e4de;
@@ -1775,7 +1901,8 @@ body{
         100%{opacity: 0%}
     }
     @keyframes port5{
-        0%{opacity: 0%}
+        0%{opacity: 100%}
+        2%{opacity: 0%}
         79%{opacity: 0%}
         80%{opacity: 100%}
         100%{opacity: 100%}
@@ -2110,4 +2237,4 @@ p {
     30%{top: 88%;}
     40%{top: 92%;}
 }
-}
+} 
