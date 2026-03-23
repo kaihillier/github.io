@@ -1,335 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liventory Inc. | MVP</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* Hide sidebar and non-essential elements when printing the Availability List */
-        @media print {
-            .no-print { display: none !important; }
-            body { background-color: white; }
-            .print-area { padding: 0; width: 100%; }
-        }
-        .mobile-frame {
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-            border: 12px solid #1f2937;
-            border-radius: 2rem;
-            height: 800px;
-            max-height: 90vh;
-        }
-    </style>
-</head>
-<body class="bg-gray-50 text-gray-800 font-sans h-screen flex overflow-hidden">
-    <div id="app" class="flex w-full h-full">
-       
-        <aside class="w-64 bg-green-900 text-white flex flex-col no-print">
-            <div class="p-6">
-                <h1 class="text-2xl font-bold flex items-center gap-2">
-                    <i class="fa-solid fa-leaf text-green-400"></i> Liventory
-                </h1>
-                <p class="text-green-300 text-sm mt-1">Live Nursery OS</p>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Kai Hillier - Portfolio</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Kings&family=Limelight&family=Lobster&family=Londrina+Sketch&family=Monoton&family=Mr+Dafoe&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Eagle+Lake&family=Kings&family=Limelight&family=Lobster&family=Londrina+Sketch&family=Monoton&family=Mr+Dafoe&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <meta name="description" content="My name is Kai Hillier and I am a student at Wheaton College. This is a portfolio of all my creative projects">
+        <link rel="icon" type="image/x-icon" href="zebracon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Eagle+Lake&family=Kings&family=Limelight&family=Lobster&family=Londrina+Sketch&family=Monoton&family=Mr+Dafoe&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Broken+Fax&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Eagle+Lake&family=Kings&family=Limelight&family=Lobster&family=Londrina+Sketch&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Monoton&family=Mr+Dafoe&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Broken+Fax&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <header>
+
+        <div>
+            <p><span id="name1">K</span><span id="name2">a</span><span id="name3">i</span> <span id="name4">Hi</span><span id="name6">l</span><span id="name7">l</span><span id="name8">i</span><span id="name9">e</span><span id="name10">r</span></p>
+        </div>
+        <div>
+            <p id="arrow"><span id="tug1">-</span><span id="tug2">-</span><span id="tug3">-</span><span id="tug4">></span></p>
+        </div>
+        <div>
+            <img id="trees" src="IMG_4340.JPEG">
+        </div>
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="https://kaihillier.github.io/github.io/index.html">Home</a>
+            <a href="https://kaihillier.github.io/github.io/design.html">3D Design</a>
+            <a href="https://kaihillier.github.io/github.io/drawing.html">Drawing</a>
+            <a href="https://kaihillier.github.io/github.io/web.html">Web Design</a>
+            <a href="https://kaihillier.github.io/github.io/gallery1.html">Gallery</a>
+        </div>
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+    </header>
+    <div class="container">
+        <img id="portrait2" src="wdress2.jpg">
+        <img id="portrait1" src="wheaton.jpg">
+        <img id="portrait3" src="wcorrect.jpg">
+        <img id="portrait4" src="what.jpg">
+        <img id="portrait5" src="wplants.jpg">
+        <div id="welcome">
+            <h3>
+                Welcome To My Portfolio!
+            </h3>
+            <h6>
+                My name is Kai Hillier, a Business and Management major at Wheaton College (MA) with a concentration in Marketing and Media Analytics and a minor in Design. This portfolio showcases a collection of my creative projects from throughout high school and college. I also designed and built this website entirely from scratch using HTML5 and CSS.
+            </h6>
+        </div>
+        <div id="gall">
+            <div class="row">
+                <div id="column1">Drawings</div>
+                <div id="column2"><img id="drawings" src="final_zebra6.png"> </div>
             </div>
-            <nav class="flex-1 px-4 space-y-2">
-                <button @click="currentView = 'dashboard'" :class="navClass('dashboard')">
-                    <i class="fa-solid fa-chart-pie w-6"></i> Dashboard
-                </button>
-                <button @click="currentView = 'inventory'" :class="navClass('inventory')">
-                    <i class="fa-solid fa-table-list w-6"></i> Inventory
-                </button>
-                <button @click="currentView = 'mobile'" :class="navClass('mobile')">
-                    <i class="fa-solid fa-mobile-screen w-6"></i> Field App <span class="ml-auto bg-green-500 text-xs py-1 px-2 rounded-full">Mobile</span>
-                </button>
-                <button @click="currentView = 'availability'" :class="navClass('availability')">
-                    <i class="fa-solid fa-file-export w-6"></i> Availability List
-                </button>
-            </nav>
-            <div class="p-4">
-                <button @click="simulateGrowth" class="w-full bg-green-800 hover:bg-green-700 text-sm py-2 px-4 rounded transition border border-green-600">
-                    <i class="fa-solid fa-clock-rotate-left mr-1"></i> Sim Growth (+1 Mo)
-                </button>
-            </div>
-        </aside>
-
-        <main class="flex-1 overflow-y-auto print-area">
-            <div class="p-8 h-full">
-
-                <div v-if="currentView === 'dashboard'" class="space-y-6">
-                    <h2 class="text-3xl font-bold text-gray-800">Overview</h2>
-                   
-                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-                        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                            <h3 class="text-gray-500 text-sm font-semibold mb-1">Total Plants</h3>
-                            <p class="text-3xl font-bold text-gray-800">{{ totalPlants }}</p>
-                        </div>
-                        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                            <h3 class="text-gray-500 text-sm font-semibold mb-1">Ready For Sale</h3>
-                            <p class="text-3xl font-bold text-green-600">{{ totalReady }}</p>
-                        </div>
-                        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                            <h3 class="text-gray-500 text-sm font-semibold mb-1">Low Stock Alerts</h3>
-                            <p class="text-3xl font-bold text-red-600">{{ lowStockItems.length }}</p>
-                        </div>
-                        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                            <h3 class="text-gray-500 text-sm font-semibold mb-1">Categories</h3>
-                            <p class="text-3xl font-bold text-gray-800">{{ uniqueCategories }}</p>
-                        </div>
-                    </div>
-
-                    <div v-if="lowStockItems.length > 0" class="bg-white rounded-lg shadow-sm border border-red-200 mt-6">
-                        <div class="bg-red-50 p-4 border-b border-red-200 rounded-t-lg">
-                            <h3 class="text-red-800 font-bold"><i class="fa-solid fa-triangle-exclamation mr-2"></i> Action Needed: Low Stock (Under 20)</h3>
-                        </div>
-                        <table class="w-full text-left border-collapse">
-                            <thead>
-                                <tr class="bg-gray-50 text-gray-500 text-sm border-b">
-                                    <th class="p-4">Plant</th>
-                                    <th class="p-4">Size</th>
-                                    <th class="p-4">Qty</th>
-                                    <th class="p-4">Location</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr v-for="item in lowStockItems" :key="item.id" class="border-b last:border-0 hover:bg-gray-50">
-                                    <td class="p-4 font-medium">{{ item.name }}</td>
-                                    <td class="p-4 text-gray-600">{{ item.size }}</td>
-                                    <td class="p-4 font-bold text-red-600">{{ item.qty }}</td>
-                                    <td class="p-4 text-gray-600">{{ item.location }}</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <div v-if="currentView === 'inventory'" class="space-y-4">
-                    <div class="flex justify-between items-center">
-                        <h2 class="text-3xl font-bold text-gray-800">Master Inventory</h2>
-                        <input type="text" v-model="searchQuery" placeholder="Search plants..." class="border border-gray-300 rounded-lg px-4 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-green-500">
-                    </div>
-                   
-                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
-                        <table class="w-full text-left border-collapse">
-                            <thead>
-                                <tr class="bg-gray-50 text-gray-500 text-sm border-b">
-                                    <th class="p-4">Plant Name</th>
-                                    <th class="p-4">Category</th>
-                                    <th class="p-4">Size</th>
-                                    <th class="p-4">Qty</th>
-                                    <th class="p-4">Stage</th>
-                                    <th class="p-4">Location</th>
-                                    <th class="p-4">Notes</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr v-for="item in filteredInventory" :key="item.id" class="border-b hover:bg-gray-50">
-                                    <td class="p-4 font-medium text-gray-800">{{ item.name }}</td>
-                                    <td class="p-4 text-gray-600">{{ item.category }}</td>
-                                    <td class="p-4 text-gray-600">{{ item.size }}</td>
-                                    <td class="p-4 font-bold" :class="item.qty < 20 ? 'text-red-600' : 'text-gray-800'">{{ item.qty }}</td>
-                                    <td class="p-4">
-                                        <span class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide" :class="stageBadgeClass(item.stage)">
-                                            {{ item.stage }}
-                                        </span>
-                                    </td>
-                                    <td class="p-4 text-gray-600">{{ item.location }}</td>
-                                    <td class="p-4 text-gray-500 text-sm italic">{{ item.notes || '--' }}</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <div v-if="currentView === 'mobile'" class="flex justify-center items-center h-full bg-gray-200 -m-8 p-8">
-                    <div class="w-full max-w-sm bg-white mobile-frame flex flex-col overflow-hidden relative">
-                        <div class="bg-green-700 text-white p-4 text-center font-bold text-lg">
-                            Field Update App
-                        </div>
-                       
-                        <div class="p-6 flex-1 overflow-y-auto">
-                            <label class="block text-sm font-bold text-gray-700 mb-2">Select Plant</label>
-                            <select v-model="mobileSelectedId" class="w-full border-2 border-gray-300 rounded-lg p-3 mb-6 bg-white text-lg">
-                                <option disabled value="">-- Choose a plant --</option>
-                                <option v-for="item in inventory" :key="item.id" :value="item.id">
-                                    {{ item.name }} ({{ item.size }})
-                                </option>
-                            </select>
-
-                            <div v-if="mobileSelectedPlant" class="space-y-6">
-                                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
-                                    <p class="text-sm text-gray-500">Location: <span class="font-bold text-gray-800">{{ mobileSelectedPlant.location }}</span></p>
-                                    <p class="text-sm text-gray-500">Category: <span class="font-bold text-gray-800">{{ mobileSelectedPlant.category }}</span></p>
-                                </div>
-
-                                <div>
-                                    <label class="block text-sm font-bold text-gray-700 mb-2">Adjust Quantity</label>
-                                    <div class="flex items-center gap-4">
-                                        <button @click="mobileSelectedPlant.qty--" class="bg-red-100 hover:bg-red-200 text-red-700 w-16 h-16 rounded-xl text-3xl font-bold flex items-center justify-center transition">-</button>
-                                        <input type="number" v-model="mobileSelectedPlant.qty" class="flex-1 text-center text-3xl font-bold border-0 p-0 focus:ring-0">
-                                        <button @click="mobileSelectedPlant.qty++" class="bg-green-100 hover:bg-green-200 text-green-700 w-16 h-16 rounded-xl text-3xl font-bold flex items-center justify-center transition">+</button>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <label class="block text-sm font-bold text-gray-700 mb-2">Update Stage</label>
-                                    <div class="grid grid-cols-2 gap-2">
-                                        <button @click="mobileSelectedPlant.stage = 'early'" :class="mobileSelectedPlant.stage === 'early' ? 'bg-blue-200 border-blue-500' : 'bg-gray-100 border-transparent'" class="border-2 p-3 rounded-lg font-bold text-blue-800 transition">Early</button>
-                                        <button @click="mobileSelectedPlant.stage = 'mid'" :class="mobileSelectedPlant.stage === 'mid' ? 'bg-yellow-200 border-yellow-500' : 'bg-gray-100 border-transparent'" class="border-2 p-3 rounded-lg font-bold text-yellow-800 transition">Mid-Stage</button>
-                                        <button @click="mobileSelectedPlant.stage = 'ready'" :class="mobileSelectedPlant.stage === 'ready' ? 'bg-green-200 border-green-500' : 'bg-gray-100 border-transparent'" class="border-2 p-3 rounded-lg font-bold text-green-800 transition">Ready</button>
-                                        <button @click="mobileSelectedPlant.stage = 'overgrown'" :class="mobileSelectedPlant.stage === 'overgrown' ? 'bg-red-200 border-red-500' : 'bg-gray-100 border-transparent'" class="border-2 p-3 rounded-lg font-bold text-red-800 transition">Overgrown</button>
-                                    </div>
-                                </div>
-                            </div>
-                           
-                            <div v-else class="text-center text-gray-400 mt-10">
-                                <i class="fa-solid fa-seedling text-4xl mb-3"></i>
-                                <p>Select a plant from the field to update inventory.</p>
-                            </div>
-                        </div>
-
-                        <div class="p-4 bg-gray-50 border-t border-gray-200">
-                            <button @click="saveMobileUpdate" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-xl text-lg shadow-lg transition disabled:opacity-50" :disabled="!mobileSelectedPlant">
-                                Save Updates
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div v-if="currentView === 'availability'" class="max-w-4xl mx-auto bg-white p-10 shadow-sm border border-gray-200 rounded-lg">
-                    <div class="flex justify-between items-start mb-8 border-b pb-6">
-                        <div>
-                            <h1 class="text-4xl font-extrabold text-green-900">Availability List</h1>
-                            <p class="text-gray-500 mt-2">Liventory Gardens & Nursery</p>
-                            <p class="text-gray-500 text-sm">Generated: {{ new Date().toLocaleDateString() }}</p>
-                        </div>
-                        <button onclick="window.print()" class="no-print bg-gray-800 hover:bg-gray-700 text-white px-6 py-2 rounded-lg font-bold shadow transition">
-                            <i class="fa-solid fa-print mr-2"></i> Print / Save PDF
-                        </button>
-                    </div>
-
-                    <p class="mb-6 text-gray-700 italic">Showing only items currently designated as "Ready for Sale". Contact our sales team for pricing on wholesale orders.</p>
-
-                    <table class="w-full text-left border-collapse">
-                        <thead>
-                            <tr class="bg-green-50 text-green-900 border-b-2 border-green-200">
-                                <th class="p-3 font-bold">Botanical / Common Name</th>
-                                <th class="p-3 font-bold">Size</th>
-                                <th class="p-3 font-bold">Available Qty</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr v-for="item in availableItems" :key="item.id" class="border-b border-gray-100">
-                                <td class="p-3 font-medium text-gray-800">{{ item.name }}</td>
-                                <td class="p-3 text-gray-600">{{ item.size }}</td>
-                                <td class="p-3 font-bold text-gray-900">{{ item.qty }}</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                   
-                    <div v-if="availableItems.length === 0" class="text-center py-10 text-gray-400">
-                        No items currently marked as 'Ready'.
-                    </div>
-                </div>
-
-            </div>
-        </main>
+        </div>
     </div>
-
-    <script>
-        const { createApp } = Vue;
-
-        createApp({
-            data() {
-                return {
-                    currentView: 'dashboard',
-                    searchQuery: '',
-                    mobileSelectedId: '',
-                    // Realistic preloaded nursery data
-                    inventory: [
-                        { id: 1, name: 'Green Giant Arborvitae', category: 'Trees', size: '3 gal', qty: 50, stage: 'mid', location: 'Field A', notes: 'Needs trimming next week' },
-                        { id: 2, name: 'Hydrangea Limelight', category: 'Shrubs', size: '5 gal', qty: 30, stage: 'ready', location: 'Greenhouse 1', notes: 'Blooming nicely' },
-                        { id: 3, name: 'Boxwood Wintergreen', category: 'Shrubs', size: '1 gal', qty: 100, stage: 'early', location: 'Field B', notes: '' },
-                        { id: 4, name: 'Red Maple', category: 'Trees', size: '15 gal', qty: 10, stage: 'ready', location: 'Field C', notes: 'Great fall color potential' },
-                        { id: 5, name: 'Lavender Phenomenal', category: 'Perennials', size: '1 qt', qty: 200, stage: 'ready', location: 'Greenhouse 2', notes: '' },
-                        { id: 6, name: 'Hostas Patriot', category: 'Perennials', size: '1 gal', qty: 45, stage: 'mid', location: 'Shade House', notes: 'Watch for slugs' },
-                        { id: 7, name: 'Japanese Maple Bloodgood', category: 'Trees', size: '7 gal', qty: 5, stage: 'ready', location: 'Field A', notes: 'Premium pricing' },
-                        { id: 8, name: 'Echinacea Purpurea', category: 'Perennials', size: '1 gal', qty: 120, stage: 'early', location: 'Greenhouse 1', notes: '' },
-                        { id: 9, name: 'Blue Point Juniper', category: 'Shrubs', size: '5 gal', qty: 25, stage: 'ready', location: 'Field B', notes: '' },
-                        { id: 10, name: 'Nellie Stevens Holly', category: 'Shrubs', size: '7 gal', qty: 14, stage: 'mid', location: 'Field C', notes: '' },
-                        { id: 11, name: 'Crepe Myrtle Natchez', category: 'Trees', size: '10 gal', qty: 8, stage: 'overgrown', location: 'Field A', notes: 'Needs up-potting to 15gal' },
-                        { id: 12, name: 'Rose Knock Out', category: 'Shrubs', size: '3 gal', qty: 60, stage: 'ready', location: 'Greenhouse 2', notes: '' },
-                        { id: 13, name: 'Azalea Encore', category: 'Shrubs', size: '2 gal', qty: 40, stage: 'mid', location: 'Shade House', notes: '' },
-                        { id: 14, name: 'Magnolia Little Gem', category: 'Trees', size: '15 gal', qty: 12, stage: 'ready', location: 'Field C', notes: '' },
-                        { id: 15, name: 'Fescue Elijah Blue', category: 'Perennials', size: '1 qt', qty: 150, stage: 'early', location: 'Greenhouse 1', notes: '' }
-                    ]
-                }
-            },
-            computed: {
-                totalPlants() {
-                    return this.inventory.reduce((sum, item) => sum + item.qty, 0);
-                },
-                totalReady() {
-                    return this.inventory.filter(i => i.stage === 'ready').reduce((sum, item) => sum + item.qty, 0);
-                },
-                lowStockItems() {
-                    return this.inventory.filter(i => i.qty < 20 && i.stage !== 'overgrown');
-                },
-                uniqueCategories() {
-                    const cats = new Set(this.inventory.map(i => i.category));
-                    return cats.size;
-                },
-                filteredInventory() {
-                    if (!this.searchQuery) return this.inventory;
-                    const q = this.searchQuery.toLowerCase();
-                    return this.inventory.filter(item =>
-                        item.name.toLowerCase().includes(q) ||
-                        item.category.toLowerCase().includes(q) ||
-                        item.location.toLowerCase().includes(q)
-                    );
-                },
-                mobileSelectedPlant() {
-                    return this.inventory.find(i => i.id === this.mobileSelectedId);
-                },
-                availableItems() {
-                    // Availability lists usually only show what's ready to sell
-                    return this.inventory.filter(i => i.stage === 'ready' && i.qty > 0)
-                                         .sort((a, b) => a.name.localeCompare(b.name));
-                }
-            },
-            methods: {
-                navClass(view) {
-                    const base = "w-full flex items-center gap-3 text-left py-3 px-4 rounded-lg transition-colors font-medium";
-                    return this.currentView === view
-                        ? `${base} bg-green-800 text-white`
-                        : `${base} text-green-100 hover:bg-green-800/50`;
-                },
-                stageBadgeClass(stage) {
-                    if (stage === 'ready') return 'bg-green-100 text-green-800 border border-green-200';
-                    if (stage === 'mid') return 'bg-yellow-100 text-yellow-800 border border-yellow-200';
-                    if (stage === 'early') return 'bg-blue-100 text-blue-800 border border-blue-200';
-                    if (stage === 'overgrown') return 'bg-red-100 text-red-800 border border-red-200';
-                    return 'bg-gray-100 text-gray-800';
-                },
-                saveMobileUpdate() {
-                    // In a real app, this would POST to a database. Here we just give user feedback.
-                    alert(`Successfully updated ${this.mobileSelectedPlant.name} in the database!`);
-                    this.mobileSelectedId = ''; // reset selection
-                    this.currentView = 'inventory'; // push back to table to see changes
-                },
-                simulateGrowth() {
-                    // Logic: Early -> Mid -> Ready -> Overgrown
-                    let changed = 0;
-                    this.inventory.forEach(plant => {
-                        if (plant.stage === 'early') { plant.stage = 'mid'; changed++; }
-                        else if (plant.stage === 'mid') { plant.stage = 'ready'; changed++; }
-                        else if (plant.stage === 'ready') { plant.stage = 'overgrown'; changed++; }
-                    });
-                    alert(`Simulated 1 month of growth! ${changed} batches of plants progressed to their next stage.`);
-                }
-            }
-        }).mount('#app')
-    </script>
-</body>
+    </body>
 </html>
