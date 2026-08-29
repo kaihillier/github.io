@@ -1,6 +1,6 @@
-function openNav() {
-  document.getElementById("mySidepanel").style.width = "250px";
-}
-function closeNav() {
-  document.getElementById("mySidepanel").style.width = "0";
+let numButtonClicks = 0;
+function buttonClicked() {
+    numButtonClicks = numButtonClicks + 1;
+    document.getElementById("mainDiv").textContent =
+        "Button Clicked times: " + numButtonClicks;
 }
