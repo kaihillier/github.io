@@ -1095,7 +1095,16 @@
 
         </div>
 
-       <form id="sponsorForm" action="https://formsubmit.co/kaihillier1@gmail.com" method="POST">
+       <form
+  id="sponsorForm"
+  action="https://formsubmit.co/kaihillier1@gmail.com"
+  method="POST"
+  enctype="multipart/form-data"
+>
+
+  <input type="hidden" name="_subject" value="Grassroots Mile Project — Sponsorship Request">
+  <input type="hidden" name="_captcha" value="false">
+
   <div class="form-grid">
 
     <div class="field">
@@ -1161,6 +1170,47 @@
         type="url"
         placeholder="https://"
       >
+
+    </div>
+
+
+    <!-- LOGO UPLOAD -->
+
+    <div class="field full">
+
+      <label for="logo">
+        Company logo
+      </label>
+
+      <div style="
+        border: 1px solid #cdd1cb;
+        padding: 20px;
+        background: #fafbf8;
+      ">
+
+        <input
+          id="logo"
+          name="attachment"
+          type="file"
+          accept=".png,.jpg,.jpeg,.svg"
+          style="
+            width: 100%;
+            padding: 12px;
+            border: 1px dashed #aeb5aa;
+            background: white;
+            cursor: pointer;
+          "
+        >
+
+        <p style="
+          margin: 10px 0 0;
+          font-size: 12px;
+          color: #666;
+        ">
+          Upload your logo as a PNG, JPG, JPEG, or SVG.
+        </p>
+
+      </div>
 
     </div>
 
@@ -1284,6 +1334,8 @@
     </div>
 
 
+    <!-- MESSAGE -->
+
     <div class="field full">
 
       <label for="message">
@@ -1307,7 +1359,7 @@
 
 
   <p class="form-note">
-    Submitting will open your email app with the sponsorship request prepared.
+    Your sponsorship request and logo will be sent securely.
   </p>
 
 
@@ -1320,50 +1372,15 @@
 </form>
 
 
-      </div>
-
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer>
-
-    <div class="container footer-inner">
-
-      <div class="footer-brand">
-        Grassroots Mile Project
-      </div>
-
-      <p>
-        Run local. Race hard. Build grassroots.
-      </p>
-
-    </div>
-
-  </footer>
 <script>
-    
-
-  /*
-    Replace this with your actual email address.
-  */
-
-  const YOUR_EMAIL = "kaihillier1@gmail.com";
-
 
   const form = document.getElementById("sponsorForm");
-  const status = document.getElementById("formStatus");
 
   const shorts = document.getElementById("shorts");
   const warmup = document.getElementById("warmup");
+
   const totalPrice = document.getElementById("totalPrice");
 
-
-  /*
-    Update the displayed sponsorship total
-    whenever an upgrade is selected.
-  */
 
   function updateTotal() {
 
@@ -1386,92 +1403,7 @@
   warmup.addEventListener("change", updateTotal);
 
 
-  /*
-    Create the email when the form is submitted.
-  */
-
-  form.addEventListener("submit", function(event) {
-
-    event.preventDefault();
-
-
-    const data = new FormData(form);
-
-
-    const name = data.get("name");
-    const company = data.get("company");
-    const email = data.get("email");
-    const website = data.get("website") || "Not provided";
-    const message = data.get("message") || "No additional message.";
-
-
-    let total = 100;
-
-
-    let sponsorshipOptions =
-      "Logo on racing singlet — $100";
-
-
-    if (shorts.checked) {
-
-      total += 50;
-
-      sponsorshipOptions +=
-        "\nLogo on racing shorts — +$50";
-
-    }
-
-
-    if (warmup.checked) {
-
-      total += 50;
-
-      sponsorshipOptions +=
-        "\nLogo on warmup top — +$50";
-
-    }
-
-
-    const subject = encodeURIComponent(
-      `Grassroots Mile Project — Sponsorship — ${company}`
-    );
-
-
-    const body = encodeURIComponent(
-
-`Hi,
-
-I'm interested in sponsoring the Grassroots Mile Project.
-
-Name: ${name}
-Company: ${company}
-Email: ${email}
-Website: ${website}
-
-SPONSORSHIP OPTIONS:
-
-${sponsorshipOptions}
-
-TOTAL SPONSORSHIP: $${total}
-
-Message:
-${message}
-
-Thanks!`
-
-    );
-
-
-    window.location.href =
-      `mailto:${YOUR_EMAIL}?subject=${subject}&body=${body}`;
-
-
-    status.style.display = "block";
-
-    status.textContent =
-      "Your email app should open with the sponsorship request ready to send.";
-
-  });</script>
+</script>
 
 </body>
 </html>
