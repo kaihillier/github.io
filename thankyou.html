@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="Thank you for supporting the Grassroots Mile Project."
+  />
+
+  <title>Thank You — Grassroots Mile Project</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+
+    :root {
+      --black: #111;
+      --white: #fff;
+      --off-white: #f5f7f2;
+      --green: #3f7d4a;
+      --green-dark: #285c34;
+      --line: #dfe2dc;
+      --muted: #666b65;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--off-white);
+      color: var(--black);
+      font-family: Inter, Arial, sans-serif;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .page {
+      width: min(calc(100% - 40px), 1080px);
+      margin: auto;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 0;
+    }
+
+    .thank-you-card {
+      width: 100%;
+      max-width: 720px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      padding: 56px;
+      box-shadow: 12px 12px 0 var(--green);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--green-dark);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 3px;
+      background: var(--green);
+    }
+
+    h1 {
+      font-size: clamp(48px, 8vw, 82px);
+      line-height: .94;
+      letter-spacing: -.065em;
+      margin: 0 0 24px;
+    }
+
+    h1 span {
+      color: var(--green);
+    }
+
+    .intro {
+      max-width: 600px;
+      color: #444842;
+      font-size: 18px;
+      margin: 0 0 28px;
+    }
+
+    .info-box {
+      background: #edf5ee;
+      border-left: 4px solid var(--green);
+      padding: 18px 20px;
+      margin: 28px 0;
+      color: var(--green-dark);
+      font-size: 14px;
+    }
+
+    .info-box strong {
+      color: var(--black);
+    }
+
+    .email-box {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      padding: 20px 0;
+      margin: 28px 0;
+    }
+
+    .email-label {
+      font-family: "DotGothic16", monospace;
+      color: var(--green-dark);
+      font-size: 13px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    .email-box a {
+      color: var(--black);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .email-box a:hover {
+      color: var(--green);
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 50px;
+      padding: 0 22px;
+      border: 2px solid var(--black);
+      background: var(--black);
+      color: var(--white);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      transition: .15s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      background: var(--green-dark);
+      border-color: var(--green-dark);
+    }
+
+    footer {
+      background: var(--black);
+      color: white;
+      padding: 26px 20px;
+      text-align: center;
+      border-top: 3px solid var(--green);
+    }
+
+    footer .footer-brand {
+      font-family: "DotGothic16", monospace;
+      color: #8cc994;
+      font-size: 13px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    footer p {
+      margin: 0;
+      color: #aaa;
+      font-size: 11px;
+    }
+
+    @media (max-width: 600px) {
+
+      .page {
+        width: min(calc(100% - 28px), 1080px);
+        padding: 40px 0;
+      }
+
+      .thank-you-card {
+        padding: 36px 24px;
+        box-shadow: 7px 7px 0 var(--green);
+      }
+
+      .intro {
+        font-size: 16px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <main class="page">
+
+    <div class="thank-you-card">
+
+      <div class="eyebrow">
+        Sponsorship request received
+      </div>
+
+      <h1>
+        Thank <span>you.</span>
+      </h1>
+
+      <p class="intro">
+        Thanks for supporting the Grassroots Mile Project. Your sponsorship
+        request and logo have been received, and I appreciate you being part
+        of the project.
+      </p>
+
+      <div class="info-box">
+
+        <strong>What happens next?</strong><br>
+
+        I will be in contact with you soon to confirm your sponsorship and
+        go over the logo specifications. We'll work together to make sure
+        your logo is set up properly for the two-color heat press vinyl
+        application.
+
+      </div>
+
+      <div class="email-box">
+
+        <div class="email-label">
+          Have another question?
+        </div>
+
+        <a href="mailto:kaihillier1@gmail.com">
+          kaihillier1@gmail.com
+        </a>
+
+      </div>
+
+      <a
+        class="btn"
+        href="https://kaihillier.github.io/github.io/"
+      >
+        Back to Grassroots Mile Project
+      </a>
+
+    </div>
+
+  </main>
+
+
+  <footer>
+
+    <div class="footer-brand">
+      Grassroots Mile Project
+    </div>
+
+    <p>
+      Built from the ground up. One mile at a time.
+    </p>
+
+  </footer>
+
+</body>
+</html>
