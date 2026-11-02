@@ -1,1564 +1,1184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Grassroots Mile Project — $100 puts your company logo on a competitive mile runner's race singlet and supports the costs of training and racing." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sponsor the Grassroots Mile Project. Put your business on a competitive mile runner's racing gear and help support the costs of training and racing.">
   <title>Grassroots Mile Project</title>
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
+    /* Sponsors & Meets Section */
+  .sponsors-meets-section {
+    background: var(--white);
+    border-top: 1px solid var(--line);
+  }
+
+  .sponsors-meets-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+
+  .sponsor-photo {
+    margin: 20px 0;
+    background: var(--off-white);
+    border: 1px solid var(--line);
+    aspect-ratio: 16/9;
+    overflow: hidden;
+  }
+
+  .sponsor-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .sponsor-thanks-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  .sponsor-badge {
+    background: var(--off-white);
+    border: 1px solid var(--line);
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .meet-card {
+    background: var(--off-white);
+    border: 1px solid var(--line);
+    padding: 24px;
+    margin-top: 20px;
+  }
+
+  .meet-card.highlight-meet {
+    border-left: 4px solid var(--green);
+    background: #edf5ee;
+  }
+
+  .meet-label {
+    font: 11px "DotGothic16", monospace;
+    color: var(--green-dark);
+    margin-bottom: 6px;
+  }
+
+  .meet-name {
+    font-size: 20px;
+    line-height: 1.25;
+    margin: 0 0 10px;
+    letter-spacing: -.02em;
+  }
+
+  .meet-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  .meet-date {
+    font-weight: 700;
+    color: var(--black);
+  }
+
+  @media(max-width:820px) {
+    .sponsors-meets-grid {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  }
     :root {
-      --black: #111;
-      --white: #fff;
-      --off-white: #f5f7f2;
-      --green: #3f7d4a;
-      --green-dark: #285c34;
-      --line: #dfe2dc;
-      --muted: #666b65;
-      --max: 1080px;
+      --black:#111;
+      --white:#fff;
+      --off-white:#f5f7f2;
+      --green:#3f7d4a;
+      --green-dark:#285c34;
+      --line:#dfe2dc;
+      --muted:#666b65;
+      --max:1120px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing:border-box; }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior:smooth; }
 
     body {
-      margin: 0;
-      color: var(--black);
-      background: var(--white);
-      font-family: Inter, Arial, sans-serif;
-      line-height: 1.6;
+      margin:0;
+      color:var(--black);
+      background:var(--white);
+      font-family:Inter,Arial,sans-serif;
+      line-height:1.6;
     }
 
     img {
-      max-width: 100%;
-      display: block;
+      display:block;
+      max-width:100%;
     }
 
-    a {
-      color: inherit;
-    }
+    a { color:inherit; }
 
-    button,
-    input,
-    textarea {
-      font: inherit;
-    }
+    button,input,textarea { font:inherit; }
 
     .container {
-      width: min(calc(100% - 40px), var(--max));
-      margin: auto;
+      width:min(calc(100% - 40px),var(--max));
+      margin:auto;
     }
 
-    .pixel {
-      font-family: "DotGothic16", monospace;
+    .pixel,.kicker,.mini-label {
+      font-family:"DotGothic16",monospace;
+      text-transform:uppercase;
     }
-
-    /* HEADER */
 
     header {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: rgba(255,255,255,.95);
-      border-bottom: 1px solid var(--line);
-      backdrop-filter: blur(10px);
+      position:sticky;
+      top:0;
+      z-index:10;
+      background:rgba(255,255,255,.96);
+      border-bottom:1px solid var(--line);
+      backdrop-filter:blur(10px);
     }
 
     .nav {
-      min-height: 74px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
+      min-height:72px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
     }
 
     .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      text-decoration: none;
-      font-weight: 800;
-      font-size: 14px;
-      text-transform: uppercase;
+      display:flex;
+      align-items:center;
+      gap:12px;
+      text-decoration:none;
+      font-weight:800;
+      font-size:13px;
+      text-transform:uppercase;
+      letter-spacing:.02em;
     }
 
     .brand img {
-      width: 46px;
-      height: 46px;
-      object-fit: contain;
+      width:44px;
+      height:44px;
+      object-fit:contain;
     }
 
     nav ul {
-      display: flex;
-      gap: 24px;
-      list-style: none;
-      margin: 0;
-      padding: 0;
+      display:flex;
+      gap:24px;
+      list-style:none;
+      margin:0;
+      padding:0;
     }
 
     nav a {
-      text-decoration: none;
-      font-size: 13px;
-      font-weight: 700;
-      text-transform: uppercase;
+      text-decoration:none;
+      font-size:12px;
+      font-weight:800;
+      text-transform:uppercase;
     }
 
-    nav a:hover {
-      color: var(--green);
-    }
-
-    /* HERO */
+    nav a:hover { color:var(--green); }
 
     .hero {
-      background: var(--off-white);
-      border-bottom: 1px solid var(--line);
-      padding: 72px 0 78px;
+      background:var(--off-white);
+      padding:58px 0 64px;
     }
 
     .hero-grid {
-      display: grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap: 64px;
-      align-items: center;
+      display:grid;
+      grid-template-columns:.9fr 1.1fr;
+      gap:52px;
+      align-items:center;
     }
 
     .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      color: var(--green-dark);
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      margin-bottom: 18px;
+      display:inline-flex;
+      align-items:center;
+      gap:9px;
+      color:var(--green-dark);
+      font-size:11px;
+      font-weight:800;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      margin-bottom:18px;
     }
 
-    .eyebrow::before {
-      content: "";
-      width: 28px;
-      height: 3px;
-      background: var(--green);
+    .eyebrow:before {
+      content:"";
+      width:26px;
+      height:3px;
+      background:var(--green);
     }
 
     h1 {
-      font-size: clamp(48px, 8vw, 86px);
-      line-height: .94;
-      letter-spacing: -.065em;
-      margin: 0 0 24px;
+      font-size:clamp(48px,7vw,82px);
+      line-height:.94;
+      letter-spacing:-.065em;
+      margin:0 0 22px;
     }
 
-    .hero h1 span {
-      color: var(--green);
-    }
+    h1 span { color:var(--green); }
 
     .hero-copy {
-      max-width: 650px;
-      color: #444842;
-      font-size: 18px;
-      margin-bottom: 30px;
+      max-width:510px;
+      color:#444842;
+      font-size:17px;
+      margin:0 0 26px;
     }
 
     .cta-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:11px;
     }
 
     .btn {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 50px;
-      padding: 0 22px;
-      border: 2px solid var(--black);
-      text-decoration: none;
-      font-size: 13px;
-      font-weight: 800;
-      text-transform: uppercase;
-      transition: .15s ease;
-      cursor: pointer;
-      background: white;
+      display:inline-flex;
+      justify-content:center;
+      align-items:center;
+      min-height:48px;
+      padding:0 20px;
+      border:2px solid var(--black);
+      text-decoration:none;
+      font-size:12px;
+      font-weight:800;
+      text-transform:uppercase;
+      transition:.15s ease;
+      cursor:pointer;
+      background:white;
     }
 
-    .btn:hover {
-      transform: translateY(-2px);
-    }
+    .btn:hover { transform:translateY(-2px); }
 
     .btn-primary {
-      background: var(--black);
-      color: var(--white);
+      background:var(--black);
+      color:white;
     }
 
     .btn-primary:hover {
-      background: var(--green-dark);
-      border-color: var(--green-dark);
+      background:var(--green-dark);
+      border-color:var(--green-dark);
     }
 
     .btn-secondary:hover {
-      color: var(--green-dark);
-      border-color: var(--green-dark);
+      color:var(--green-dark);
+      border-color:var(--green-dark);
     }
 
-    .hero-card {
-      background: var(--black);
-      color: var(--white);
-      padding: 28px;
-      border: 5px solid var(--green);
-      box-shadow: 12px 12px 0 var(--green);
+    .hero-photo { position:relative; }
+
+    .hero-photo img {
+      width:100%;
+      aspect-ratio:1.25/1;
+      object-fit:cover;
+      object-position:center 42%;
     }
 
-    .hero-card .price {
-      font-size: clamp(58px, 8vw, 88px);
-      line-height: .9;
-      font-weight: 800;
-      letter-spacing: -.06em;
-      margin: 8px 0 14px;
+    .photo-tag {
+      position:absolute;
+      right:14px;
+      bottom:14px;
+      background:var(--black);
+      color:white;
+      padding:9px 13px;
+      font:12px "DotGothic16",monospace;
+      text-transform:uppercase;
     }
 
-    .hero-card h2 {
-      font-size: 17px;
-      margin: 0 0 18px;
-    }
-
-    .hero-card p {
-      color: #d7d9d5;
-      margin: 0;
-      font-size: 14px;
-    }
-
-    .mini-label {
-      font-family: "DotGothic16", monospace;
-      color: #8cc994;
-      font-size: 13px;
-      text-transform: uppercase;
-    }
-
-    /* GENERAL SECTIONS */
-
-    section {
-      padding: 84px 0;
-    }
+    section { padding:78px 0; }
 
     .section-head {
-      max-width: 720px;
-      margin-bottom: 42px;
+      max-width:700px;
+      margin-bottom:34px;
     }
 
-    .section-kicker {
-      font-family: "DotGothic16", monospace;
-      color: var(--green-dark);
-      text-transform: uppercase;
-      font-size: 14px;
-      margin-bottom: 10px;
+    .kicker {
+      color:var(--green-dark);
+      font-size:13px;
+      margin-bottom:9px;
     }
 
     .section-title {
-      font-size: clamp(34px, 5vw, 54px);
-      line-height: 1;
-      letter-spacing: -.045em;
-      margin: 0 0 14px;
+      font-size:clamp(32px,4.5vw,50px);
+      line-height:1.02;
+      letter-spacing:-.05em;
+      margin:0 0 13px;
     }
 
     .section-intro {
-      color: var(--muted);
-      margin: 0;
-      font-size: 17px;
+      color:var(--muted);
+      margin:0;
+      font-size:16px;
     }
 
-    /* HOW IT WORKS */
+    .value-section { padding-top:72px; }
 
     .value-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      border:1px solid var(--line);
     }
 
-    .value-card {
-      border: 1px solid var(--line);
-      padding: 28px;
-      background: white;
+    .value-card { padding:32px; }
+
+    .value-card + .value-card {
+      border-left:1px solid var(--line);
+      background:var(--off-white);
     }
 
-    .number {
-      font-family: "DotGothic16", monospace;
-      color: var(--green);
-      font-size: 18px;
-      margin-bottom: 26px;
+    .value-label {
+      color:var(--green-dark);
+      font:13px "DotGothic16",monospace;
+      text-transform:uppercase;
+      margin-bottom:13px;
     }
 
     .value-card h3 {
-      margin: 0 0 10px;
-      font-size: 20px;
+      font-size:26px;
+      line-height:1.1;
+      letter-spacing:-.035em;
+      margin:0 0 12px;
     }
 
     .value-card p {
-      color: var(--muted);
-      margin: 0;
-      font-size: 14px;
+      color:var(--muted);
+      margin:0;
+      font-size:14px;
     }
 
-    /* SINGLET */
-
-    .sponsor-section {
-      background: var(--off-white);
+    .price-inline {
+      color:var(--green-dark);
+      font-weight:800;
     }
 
-    .sponsor-grid {
-      display: grid;
-      grid-template-columns: .9fr 1.1fr;
-      gap: 56px;
-      align-items: center;
+    .simple-list {
+      display:grid;
+      gap:10px;
+      margin:20px 0 0;
+      padding:0;
+      list-style:none;
     }
 
-    .singlet-placeholder {
-      min-height: 480px;
-      background: white;
-      border: 2px dashed #bfc5bd;
-      display: grid;
-      place-items: center;
-      text-align: center;
-      padding: 30px;
-      position: relative;
-      overflow: hidden;
+    .simple-list li {
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+      font-size:14px;
     }
 
-    .singlet-placeholder::before,
-    .singlet-placeholder::after {
-      content: "";
-      position: absolute;
-      background: var(--green);
-      opacity: .12;
-      border-radius: 50%;
+    .simple-list li:before {
+      content:"✓";
+      display:grid;
+      place-items:center;
+      flex:0 0 21px;
+      height:21px;
+      background:var(--green);
+      color:white;
+      font-weight:800;
+      font-size:12px;
     }
 
-    .singlet-placeholder::before {
-      width: 180px;
-      height: 180px;
-      top: -70px;
-      right: -50px;
+    .placement-note {
+      margin-top:20px;
+      padding:15px 17px;
+      background:#edf5ee;
+      border-left:4px solid var(--green);
+      font-size:13px;
+      color:var(--green-dark);
     }
 
-    .singlet-placeholder::after {
-      width: 120px;
-      height: 120px;
-      bottom: -45px;
-      left: -35px;
+    .gallery-section { background:var(--off-white); }
+
+    .gallery-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+      gap:16px;
     }
 
-    .singlet-copy {
-      position: relative;
-      z-index: 1;
+    .gallery-grid figure {
+      margin:0;
+      overflow:hidden;
+      background:#e8ece6;
+      border:1px solid var(--line);
+      display:flex;
+      align-items:center;
+      justify-content:center;
     }
 
-    .singlet-copy strong {
-      display: block;
-      font-size: 20px;
-      margin-bottom: 6px;
+    .gallery-grid img {
+      width:100%;
+      height:auto;
+      object-fit:contain;
+      transition:transform .35s ease;
     }
 
-    .singlet-copy span {
-      color: var(--muted);
-      font-size: 13px;
+    .gallery-grid figure:hover img {
+      transform:scale(1.025);
     }
 
-    .benefits {
-      display: grid;
-      gap: 14px;
-      margin-top: 28px;
+    .gallery-caption {
+      color:var(--muted);
+      font-size:12px;
+      margin-top:12px;
     }
 
-    .benefit {
-      display: grid;
-      grid-template-columns: 30px 1fr;
-      gap: 12px;
+    .impact-grid {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:48px;
+      align-items:start;
     }
 
-    .check {
-      width: 26px;
-      height: 26px;
-      background: var(--green);
-      color: white;
-      display: grid;
-      place-items: center;
-      font-weight: 800;
-    }
-
-    .benefit strong {
-      display: block;
-      font-size: 14px;
-    }
-
-    .benefit p {
-      margin: 2px 0 0;
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    /* FUNDING */
-
-    .funds-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
-      align-items: start;
-    }
-
-    .fund-list {
-      border-top: 1px solid var(--line);
-    }
+    .fund-list { border-top:1px solid var(--line); }
 
     .fund-item {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 20px;
-      padding: 19px 0;
-      border-bottom: 1px solid var(--line);
-      align-items: center;
+      display:flex;
+      justify-content:space-between;
+      gap:18px;
+      align-items:center;
+      padding:17px 0;
+      border-bottom:1px solid var(--line);
     }
 
-    .fund-item strong {
-      font-size: 15px;
-    }
+    .fund-item strong { font-size:14px; }
 
     .fund-item span {
-      color: var(--green-dark);
-      font-family: "DotGothic16", monospace;
-      font-size: 12px;
+      color:var(--green-dark);
+      font:11px "DotGothic16",monospace;
     }
 
     .impact-box {
-      background: var(--black);
-      color: white;
-      padding: 34px;
+      background:var(--black);
+      color:white;
+      padding:32px;
+    }
+
+    .impact-box .green-line {
+      width:58px;
+      height:5px;
+      background:var(--green);
     }
 
     .impact-box h3 {
-      font-size: 28px;
-      line-height: 1.05;
-      margin: 18px 0 14px;
+      font-size:29px;
+      line-height:1.06;
+      letter-spacing:-.035em;
+      margin:18px 0 12px;
     }
 
     .impact-box p {
-      color: #d3d6d1;
-      font-size: 14px;
-      margin: 0 0 20px;
+      color:#d3d6d1;
+      font-size:14px;
+      margin:0;
     }
 
-    .green-line {
-      height: 5px;
-      width: 70px;
-      background: var(--green);
-    }
-
-    /* ABOUT */
+    .about-section { background:var(--off-white); }
 
     .about-grid {
-      display: grid;
-      grid-template-columns: .7fr 1.3fr;
-      gap: 58px;
-      align-items: start;
+      display:grid;
+      grid-template-columns:.8fr 1.2fr;
+      gap:52px;
+      align-items:center;
     }
 
-    .photo-placeholder {
-      aspect-ratio: 4 / 5;
-      border: 2px dashed #bfc5bd;
-      background: var(--off-white);
-      display: grid;
-      place-items: center;
-      text-align: center;
-      color: var(--muted);
-      padding: 24px;
+    .about-photo img {
+      width:100%;
+      aspect-ratio:4/5;
+      object-fit:cover;
+      object-position:center 25%;
     }
 
-    .photo-placeholder span {
-      font-family: "DotGothic16", monospace;
-      font-size: 13px;
-      text-transform: uppercase;
+    .about-copy p { color:var(--muted); }
+
+    .about-copy p.lead {
+      color:var(--black);
+      font-size:17px;
     }
 
-    .about-copy p {
-      color: var(--muted);
+    .stats {
+      display:flex;
+      flex-wrap:wrap;
+      gap:26px;
+      margin:22px 0;
     }
 
-    .about-copy p:first-of-type {
-      color: var(--black);
-      font-size: 19px;
+    .stat strong {
+      display:block;
+      font-size:25px;
+      letter-spacing:-.04em;
+    }
+
+    .stat span {
+      color:var(--muted);
+      font:11px "DotGothic16",monospace;
+      text-transform:uppercase;
     }
 
     .quote {
-      border-left: 5px solid var(--green);
-      padding: 4px 0 4px 20px;
-      margin-top: 28px;
-      font-weight: 700;
-      font-size: 18px;
+      border-left:5px solid var(--green);
+      padding:4px 0 4px 18px;
+      margin-top:22px;
+      font-weight:700;
+      font-size:17px;
     }
 
-    /* CONTACT */
-
-    .contact-section {
-      background: var(--off-white);
+    .socials {
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:25px;
     }
+
+    .contact-section { background:white; }
 
     .contact-grid {
-      display: grid;
-      grid-template-columns: .75fr 1.25fr;
-      gap: 56px;
-      align-items: start;
+      display:grid;
+      grid-template-columns:.75fr 1.25fr;
+      gap:52px;
+      align-items:start;
     }
 
-    .contact-info p {
-      color: var(--muted);
-    }
+    .contact-info p { color:var(--muted); }
 
     .contact-price {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 10px 14px;
-      background: var(--green);
-      color: white;
-      font-family: "DotGothic16", monospace;
-      font-size: 16px;
+      display:inline-block;
+      margin-top:12px;
+      padding:10px 14px;
+      background:var(--green);
+      color:white;
+      font:14px "DotGothic16",monospace;
     }
 
     form {
-      background: white;
-      border: 1px solid var(--line);
-      padding: 28px;
+      background:var(--off-white);
+      border:1px solid var(--line);
+      padding:26px;
     }
 
     .form-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:16px;
     }
 
-    .field {
-      margin-bottom: 18px;
-    }
-
-    .field.full {
-      grid-column: 1 / -1;
-    }
+    .field { margin-bottom:16px; }
+    .field.full { grid-column:1/-1; }
 
     label {
-      display: block;
-      font-size: 12px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: .05em;
-      margin-bottom: 7px;
+      display:block;
+      font-size:11px;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.05em;
+      margin-bottom:7px;
     }
 
-    input,
+    input,textarea {
+      width:100%;
+      border:1px solid #cdd1cb;
+      padding:12px 13px;
+      background:white;
+      color:var(--black);
+      outline:none;
+      border-radius:0;
+    }
+
+    input:focus,textarea:focus {
+      border-color:var(--green);
+      box-shadow:0 0 0 2px rgba(63,125,74,.12);
+    }
+
+    input[type=checkbox] {
+      width:18px;
+      height:18px;
+      accent-color:var(--green);
+    }
+
     textarea {
-      width: 100%;
-      border: 1px solid #cdd1cb;
-      padding: 13px 14px;
-      background: white;
-      color: var(--black);
-      outline: none;
-      border-radius: 0;
+      min-height:110px;
+      resize:vertical;
     }
 
-    input:focus,
-    textarea:focus {
-      border-color: var(--green);
-      box-shadow: 0 0 0 2px rgba(63,125,74,.12);
+    .upload-box,.options-box {
+      border:1px solid #cdd1cb;
+      padding:17px;
+      background:white;
     }
 
-    textarea {
-      min-height: 130px;
-      resize: vertical;
+    .upload-box p,.form-note {
+      color:var(--muted);
+      font-size:12px;
+      margin:9px 0 0;
     }
 
-    .form-note {
-      color: var(--muted);
-      font-size: 12px;
-      margin: 12px 0 0;
+    .check-option {
+      display:flex;
+      align-items:center;
+      gap:11px;
+      font-size:13px;
+      font-weight:600;
+      margin:0 0 12px;
+      cursor:pointer;
     }
 
-    .form-status {
-      display: none;
-      margin-top: 14px;
-      padding: 12px 14px;
-      background: #edf5ee;
-      border-left: 4px solid var(--green);
-      color: var(--green-dark);
-      font-size: 13px;
+    .check-option:last-child { margin-bottom:0; }
+
+    .check-option strong { color:var(--green-dark); }
+
+    .total-box {
+      background:var(--black);
+      color:white;
+      padding:16px 19px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:15px;
     }
 
-    /* FOOTER */
+    .total-box span {
+      font:13px "DotGothic16",monospace;
+      text-transform:uppercase;
+    }
+
+    .total-box strong {
+      color:#8cc994;
+      font-size:27px;
+    }
+
+    .form-note { margin:12px 0 0; }
 
     footer {
-      background: var(--black);
-      color: white;
-      padding: 30px 0;
-    }
-
-    .footer-inner {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      align-items: center;
+      background:var(--black);
+      color:white;
+      padding:30px 20px;
+      text-align:center;
+      border-top:3px solid #8cc994;
     }
 
     .footer-brand {
-      font-weight: 800;
-      font-size: 13px;
-      text-transform: uppercase;
+      font:13px "DotGothic16",monospace;
+      letter-spacing:1px;
+      text-transform:uppercase;
+      color:#8cc994;
+      margin-bottom:8px;
     }
 
     footer p {
-      margin: 0;
-      color: #aeb2ad;
-      font-size: 12px;
+      margin:0;
+      color:#aaa;
+      font-size:12px;
     }
 
-    /* RESPONSIVE */
-
-    @media (max-width: 800px) {
-      .hero-grid,
-      .sponsor-grid,
-      .funds-grid,
-      .about-grid,
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .value-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        padding-top: 52px;
-      }
-
-      .hero-card {
-        max-width: 520px;
-      }
-
-      .singlet-placeholder {
-        min-height: 360px;
-      }
-
-      nav ul {
-        display: none;
-      }
+    footer .copyright {
+      margin-top:16px;
+      font-size:11px;
+      color:#666;
     }
 
-    @media (max-width: 520px) {
+    @media(max-width:820px) {
+      .hero-grid,.impact-grid,.about-grid,.contact-grid {
+        grid-template-columns:1fr;
+      }
+
+      .hero-grid { gap:30px; }
+      .hero-photo { order:-1; }
+
+      .hero-photo img { aspect-ratio:1.4/1; }
+
+      nav ul { gap:13px; }
+      nav a { font-size:10px; }
+
+      .about-photo { max-width:460px; }
+    }
+
+    @media(max-width:600px) {
       .container {
-        width: min(calc(100% - 28px), var(--max));
+        width:min(calc(100% - 28px),var(--max));
       }
 
-      section {
-        padding: 62px 0;
+      .nav { min-height:64px; }
+
+      .brand {
+        font-size:11px;
+        gap:8px;
+      }
+
+      .brand img {
+        width:38px;
+        height:38px;
+      }
+
+      nav ul { display:none; }
+
+      .hero { padding:32px 0 46px; }
+
+      .hero-photo img { aspect-ratio:1/1; }
+
+      section { padding:58px 0; }
+
+      .value-grid { grid-template-columns:1fr; }
+
+      .value-card + .value-card {
+        border-left:0;
+        border-top:1px solid var(--line);
+      }
+
+      .value-card { padding:24px; }
+
+      .gallery-grid {
+        grid-template-columns:1fr;
+        gap:12px;
       }
 
       .form-grid {
-        grid-template-columns: 1fr;
-        gap: 0;
+        grid-template-columns:1fr;
+        gap:0;
       }
 
-      .field.full {
-        grid-column: auto;
-      }
+      .field.full { grid-column:auto; }
 
-      .footer-inner {
-        align-items: flex-start;
-        flex-direction: column;
-      }
+      form { padding:18px; }
 
-      .hero-card {
-        box-shadow: 7px 7px 0 var(--green);
-      }
+      .stats { gap:18px; }
     }
   </style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="container nav">
-
-      <a class="brand" href="#top">
-        <img src="grassroots_logo_trans2.png" alt="Grassroots Mile Project logo">
-        <span>Grassroots Mile Project</span>
-      </a>
-
-      <nav>
-        <ul>
-          <li><a href="#opportunity">Opportunity</a></li>
-          <li><a href="#impact">Impact</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Get Involved</a></li>
-        </ul>
-      </nav>
-
-    </div>
-  </header>
-
-  <main id="top">
-
-    <!-- HERO -->
-    <section class="hero">
-
-      <div class="container hero-grid">
-
-        <div>
-
-          <div class="eyebrow">
-            A grassroots advertising project
-          </div>
-
-          <h1>
-            Your logo.<br>
-            My <span>race.</span>
-          </h1>
-
-          <p class="hero-copy">
-            Put your company in front of race-day audiences and on my social media —
-            while directly helping a young runner cover the real costs of chasing a
-            competitive mile.
-          </p>
-
-          <div class="cta-row">
-            <a class="btn btn-primary" href="#contact">
-              Claim an ad spot
-            </a>
-
-            <a class="btn btn-secondary" href="#impact">
-              See where it goes
-            </a>
-          </div>
-
-        </div>
-
-        <aside class="hero-card">
-
-          <div class="mini-label">
-            One singlet. One simple deal.
-          </div>
-
-          <div class="price">
-            $100
-          </div>
-
-          <h2>
-            Your logo on my racing singlet.
-          </h2>
-
-          <p>
-            I wear it at races, take race-day photos in it, and tag your business
-            when I share those photos on social media.
-          </p>
-
-        </aside>
-
-      </div>
-
-    </section>
-
-    <!-- OPPORTUNITY -->
-    <section id="opportunity">
-
-      <div class="container">
-
-        <div class="section-head">
-
-          <div class="section-kicker">
-            The opportunity
-          </div>
-
-          <h2 class="section-title">
-            Simple for you. Meaningful for me.
-          </h2>
-
-          <p class="section-intro">
-            This is a small, direct sponsorship opportunity designed for local
-            businesses and companies that want an authentic connection to an
-            athlete who is putting in the work.
-          </p>
-
-        </div>
-
-        <div class="value-grid">
-
-          <article class="value-card">
-
-            <div class="number">
-              01 / BUY A SPOT
-            </div>
-
-            <h3>
-              $100 puts your logo on the singlet.
-            </h3>
-
-            <p>
-              Send over your logo and I'll work with you on placement and sizing
-              for the race singlet. Five front spots are available on a first come, first served basis, all other logos will go on the back of the singlet.
-            </p>
-
-          </article>
-
-          <article class="value-card">
-
-            <div class="number">
-              02 / GET SEEN
-            </div>
-
-            <h3>
-              Your business comes with me to race day.
-            </h3>
-
-            <p>
-              Your logo is visible while I compete, and I will post race photos
-              and tag your company on social media.
-            </p>
-
-          </article>
-
-          <article class="value-card">
-
-            <div class="number">
-              03 / SUPPORT THE MILE
-            </div>
-
-            <h3>
-              Your sponsorship helps fund the pursuit.
-            </h3>
-
-            <p>
-              Your $100 goes toward the practical costs that make training and
-              competing possible.
-            </p>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- SINGLET / ADVERTISING -->
-    <section class="sponsor-section">
-
-      <div class="container sponsor-grid">
-
-        <div class="singlet-placeholder">
-
-          <img src="singletmock2.jpg">
-
-        </div>
-
-        <div>
-
-          <div class="section-kicker">
-            More than an ad
-          </div>
-
-          <h2 class="section-title">
-            A small sponsorship with a real-world impact.
-          </h2>
-
-          <p class="section-intro">
-            A $100 ad spot is an affordable way for a business to support an
-            athlete while getting a tangible piece of visibility in return.
-          </p>
-
-          <div class="benefits">
-
-            <div class="benefit">
-
-              <div class="check">
-                ✓
-              </div>
-
-              <div>
-                <strong>
-                  Race-day visibility
-                </strong>
-
-                <p>
-                  Your logo travels with me to meets and appears on the singlet
-                  I compete in.
-                </p>
-              </div>
-
-            </div>
-
-            <div class="benefit">
-
-              <div class="check">
-                ✓
-              </div>
-
-              <div>
-                <strong>
-                  Social media exposure
-                </strong>
-
-                <p>
-                  I'll share race photos and tag your business when I post them.
-                </p>
-              </div>
-
-            </div>
-
-            <div class="benefit">
-
-              <div class="check">
-                ✓
-              </div>
-
-              <div>
-                <strong>
-                  Direct athlete support
-                </strong>
-
-                <p>
-                  Your sponsorship helps remove some of the financial barriers
-                  between training and racing.
-                </p>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- WHERE MONEY GOES -->
-    <section id="impact">
-
-      <div class="container">
-
-        <div class="section-head">
-
-          <div class="section-kicker">
-            Where your $100 goes
-          </div>
-
-          <h2 class="section-title">
-            Fund the work behind the race.
-          </h2>
-
-          <p class="section-intro">
-            I'm training for the mile while working full time and completing
-            school online. The sponsorship money helps cover the costs that come
-            with actually showing up and competing.
-          </p>
-
-        </div>
-
-        <div class="funds-grid">
-
-          <div class="fund-list">
-
-            <div class="fund-item">
-              <strong>Meet entry fees</strong>
-              <span>RACE</span>
-            </div>
-
-            <div class="fund-item">
-              <strong>Travel to meets</strong>
-              <span>TRAVEL</span>
-            </div>
-
-            <div class="fund-item">
-              <strong>USATF membership fees</strong>
-              <span>COMPETE</span>
-            </div>
-
-            <div class="fund-item">
-              <strong>Training & racing gear</strong>
-              <span>TRAIN</span>
-            </div>
-
-          </div>
-
-          <div class="impact-box">
-
-            <div class="green-line"></div>
-
-            <h3>
-              Your business helps make the next race possible.
-            </h3>
-
-            <p>
-              The goal is straightforward: keep training, keep racing, keep
-              improving. Every sponsor helps make the next start line a little
-              more accessible.
-            </p>
-
-            <div class="mini-label">
-              Grassroots → one mile at a time
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- ABOUT THE RUNNER -->
-    <section id="about">
-
-      <div class="container about-grid">
-
-        <div>
-  <img
-    src="IMG_9997.jpg"
-    alt="Photo of the Grassroots Mile Project runner"
-    style="width: 100%; height: 100%; object-fit: cover;"
-  >
-</div>
-
-        <div class="about-copy">
-
-          <div class="section-kicker">
-            The runner behind the project
-          </div>
-
-          <h2 class="section-title">
-            Meet the athlete.
-          </h2>
-
-          <p>
-            I'm a sub-elite runner chasing a faster mile while balancing a
-            full-time job and online school. Grassroots Mile Project is my way
-            of bringing a little creativity to the financial side of
-            competitive running — and giving businesses a simple way to be part
-            of the journey.
-          </p>
-
-          <p>
-            I’m Kai Hillier, a recent graduate from Wheaton College (MA) where I’m currently earning my online Master’s degree in Sustainable Business. I train on Martha’s Vineyard where I also work on a farm. Currently my best mile time is 4:11.50* and my 1500m best is 3:53.04. My recent results include winning the Montpelier Mile and the Parkway Mile, as well as taking second place in the Fairgrounds Mile in 4:16.59 on a horse track against a competitive field. My goal for this indoor season is to run under 4:08 in the full mile, which I’m confident I can do.
-          </p>
-
-         <div class="quote">
-  “The goal isn't just to run a fast mile. It's to build something
-  from the ground up.”
-</div>
-
-<div style="
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 42px;
-">
-
-  <a
-    href="https://www.instagram.com/kai.hillier_"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="btn btn-secondary"
-  >
-    Instagram
-  </a>
-
-  <a
-    href="https://youtube.com/@sunsetmilestrackclub?si=BFwTzgZyITxtDcmk"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="btn btn-secondary"
-  >
-    YouTube
-  </a>
-
-  <a
-    href="https://www.tfrrs.org/athletes/8256861/Wheaton_MA/Kai_Hillier.html"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="btn btn-secondary"
-  >
-    College Results
-  </a>
-
-</div>
-
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- CONTACT / SPONSORSHIP FORM -->
-    <section id="contact" class="contact-section">
-
-      <div class="container contact-grid">
-
-       <div class="contact-info">
-
-  <div class="section-kicker">
-    Get involved
+<header>
+  <div class="container nav">
+    <a class="brand" href="#top">
+      <img src="grassroots_logo_trans2.png" alt="Grassroots Mile Project logo">
+      <span>Grassroots Mile Project</span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#sponsorship">Sponsorship</a></li>
+        <li><a href="#photos">Photos</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Get involved</a></li>
+      </ul>
+    </nav>
   </div>
+</header>
 
-  <h2 class="section-title">
-    Put your logo on the next race.
-  </h2>
+<main id="top">
 
-  <p>
-    Interested in sponsoring an ad spot? Fill out the form and I'll
-    get back to you with the next steps and logo specifications.
-  </p>
+  <section class="hero">
+    <div class="container hero-grid">
 
-<div style="
-  margin-top: 20px;
-  margin-bottom: 18px;
-  font-size: 13px;
-  color: #666b65;
-">
-  Questions? Reach me directly at
-  <a
-    href="mailto:kaihillier1@gmail.com"
-    style="
-      color: #285c34;
-      font-weight: 700;
-      text-decoration: none;
-    "
-  >
-    kaihillier1@gmail.com
-  </a>
-</div>
+      <div>
+        <div class="eyebrow">A grassroots advertising project</div>
 
-<div class="contact-price">
-  $100 / AD SPOT
-</div>
+        <h1>Your logo.<br>My <span>race.</span></h1>
 
-
-  <div style="
-    margin-top: 28px;
-    padding: 18px 20px;
-    border-left: 4px solid #3f7d4a;
-    background: #edf5ee;
-    color: #285c34;
-    font-size: 13px;
-    line-height: 1.6;
-  ">
-
-    <strong style="
-      display: block;
-      margin-bottom: 6px;
-      color: #111;
-      font-size: 14px;
-    ">
-      Your logo stays with the project.
-    </strong>
-
-    Your logo is guaranteed to remain on the singlet for at least the
-    <strong>2027 indoor, outdoor, and summer racing seasons</strong>.
-    After that, it will remain on the singlet for as long as I continue
-    racing in it.
-
-  </div>
-
-</div>
-
-
-             <form
-  id="sponsorForm"
-  action="https://formsubmit.co/kaihillier1@gmail.com"
-  method="POST"
-  enctype="multipart/form-data"
->
-
-  <input type="hidden" name="_subject" value="Grassroots Mile Project — Sponsorship Request">
-  <input type="hidden" name="_captcha" value="false">
-<input
-  type="hidden"
-  name="_next"
-  value="https://kaihillier.github.io/github.io/thankyou"
->
-  <div class="form-grid">
-
-    <div class="field">
-
-      <label for="name">
-        Your name
-      </label>
-
-      <input
-        id="name"
-        name="name"
-        type="text"
-        autocomplete="name"
-        required
-      >
-
-    </div>
-
-
-    <div class="field">
-
-      <label for="company">
-        Company
-      </label>
-
-      <input
-        id="company"
-        name="company"
-        type="text"
-        autocomplete="organization"
-        required
-      >
-
-    </div>
-
-
-    <div class="field">
-
-      <label for="email">
-        Email
-      </label>
-
-      <input
-        id="email"
-        name="email"
-        type="email"
-        autocomplete="email"
-        required
-      >
-
-    </div>
-
-
-    <div class="field">
-
-      <label for="website">
-        Company website
-      </label>
-
-      <input
-        id="website"
-        name="website"
-        type="url"
-        placeholder="https://"
-      >
-
-    </div>
-
-
-    <!-- LOGO UPLOAD -->
-
-    <div class="field full">
-
-      <label for="logo">
-        Company logo
-      </label>
-
-      <div style="
-        border: 1px solid #cdd1cb;
-        padding: 20px;
-        background: #fafbf8;
-      ">
-
-        <input
-          id="logo"
-          name="attachment"
-          type="file"
-          accept=".png,.jpg,.jpeg,.svg"
-          style="
-            width: 100%;
-            padding: 12px;
-            border: 1px dashed #aeb5aa;
-            background: white;
-            cursor: pointer;
-          "
-        >
-
-                <p style="
-          margin: 10px 0 0;
-          font-size: 12px;
-          line-height: 1.6;
-          color: #666;
-        ">
-          Upload your logo as a PNG, JPG, JPEG, or SVG.
-          <br><br>
-          <strong style="color: #333;">Logo requirements:</strong>
-          Your logo can be up to <strong>two colors</strong> and will be applied
-          on a <strong>white background</strong>. All logos will be applied using
-          <strong>heat press vinyl</strong>.
-          <br><br>
-          I will be in contact with you about the two-color logo design. If your
-          current logo needs to be adjusted, we can work together to find a design
-          that works well.
+        <p class="hero-copy">
+          A simple $100 sponsorship puts your business on my racing singlet and helps cover the real costs of training, traveling, and competing.
         </p>
 
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#contact">Sponsor a spot</a>
+          <a class="btn btn-secondary" href="#sponsorship">How it works</a>
+        </div>
+      </div>
 
+      <div class="hero-photo">
+        <img src="images/runningshot.jpg" alt="Kai running on the track in Grassroots Mile Project racing gear">
+        <div class="photo-tag">One mile at a time</div>
       </div>
 
     </div>
+  </section>
 
+  <section id="sponsorship" class="value-section">
+    <div class="container">
 
-    <!-- SPONSORSHIP OPTIONS -->
+      <div class="section-head">
+        <div class="kicker">The sponsorship</div>
+        <h2 class="section-title">A straightforward exchange.</h2>
+        <p class="section-intro">
+          You support an independent runner's racing costs. In return, your business gets a visible place on the gear I wear to compete.
+        </p>
+      </div>
 
-    <div class="field full">
+      <div class="value-grid">
 
-      <label>
-        Additional Sponsorship options
-      </label>
+        <article class="value-card">
+          <div class="value-label">What your business gets</div>
 
-      <div style="
-        border: 1px solid #cdd1cb;
-        padding: 18px;
-        background: #fafbf8;
-      ">
+          <h3><span class="price-inline">$100</span> for a singlet logo spot.</h3>
 
-        <label style="
-          display: flex;
-          align-items: center;
-          gap: 12px;
-          font-size: 14px;
-          font-weight: 600;
-          text-transform: none;
-          letter-spacing: 0;
-          margin-bottom: 14px;
-          cursor: pointer;
-        ">
+          <p>
+            Your logo becomes part of my race-day kit and the story I share around the project.
+          </p>
 
-          <input
-            type="checkbox"
-            id="shorts"
-            name="shorts"
-            value="50"
-            style="
-              width: 18px;
-              height: 18px;
-              accent-color: #3f7d4a;
-            "
-          >
+          <ul class="simple-list">
+            <li>Your logo printed on my racing singlet.</li>
+            <li>Visibility at the meets where I compete.</li>
+            <li>Race photos shared on social media, with your business tagged when posted.</li>
+          </ul>
 
-          <span>
-            Add logo to racing shorts
-            <strong style="color: #3f7d4a;">+ $50</strong>
-          </span>
+          <div class="placement-note">
+            <strong>Logo placement:</strong> Seven front placements are available on a first-come, first-served basis. Additional logos go on the back of the singlet.
+          </div>
+        </article>
 
-        </label>
+        <article class="value-card">
+          <div class="value-label">What your support makes possible</div>
 
+          <h3>More opportunities to train and race.</h3>
 
-        <label style="
-          display: flex;
-          align-items: center;
-          gap: 12px;
-          font-size: 14px;
-          font-weight: 600;
-          text-transform: none;
-          letter-spacing: 0;
-          margin: 0;
-          cursor: pointer;
-        ">
+          <p>
+            Your sponsorship helps pay for the practical expenses behind each start line.
+          </p>
 
-          <input
-            type="checkbox"
-            id="warmup"
-            name="warmup"
-            value="50"
-            style="
-              width: 18px;
-              height: 18px;
-              accent-color: #3f7d4a;
-            "
-          >
+          <ul class="simple-list">
+            <li>Meet entry fees and competition costs.</li>
+            <li>Travel to races and meets.</li>
+            <li>USATF membership and racing gear.</li>
+          </ul>
 
-          <span>
-            Add logo to warmup top
-            <strong style="color: #3f7d4a;">+ $50</strong>
-          </span>
-
-        </label>
+          <div class="placement-note">
+            <strong>How long your logo stays:</strong> Your logo is guaranteed to remain on the singlet for at least the 2027 indoor, outdoor, and summer racing seasons. After that, it stays on the singlet for as long as I continue racing in it.
+          </div>
+        </article>
 
       </div>
 
-    </div>
-
-
-    <!-- TOTAL -->
-
-    <div class="field full">
-
-      <div style="
-        background: #111;
-        color: white;
-        padding: 18px 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-      ">
-
-        <span style="
-          font-family: 'DotGothic16', monospace;
-          font-size: 14px;
-          text-transform: uppercase;
-        ">
-          Sponsorship total
-        </span>
-
-        <strong
-          id="totalPrice"
-          style="
-            font-size: 28px;
-            color: #8cc994;
-          "
-        >
-          $100
-        </strong>
-
-      </div>
-
-    </div>
-
-
-    <!-- MESSAGE -->
-
-    <div class="field full">
-
-      <label for="message">
-        Message
-      </label>
-
-      <textarea
-        id="message"
-        name="message"
-        placeholder="Tell me a little about your business or ask a question."
-      ></textarea>
-
-    </div>
-
-  </div>
-
-
-  <button class="btn btn-primary" type="submit">
-    Request an ad spot
-  </button>
-
-
-  <p class="form-note">
-    Your sponsorship request and logo will be sent securely.
-  </p>
-
-
-  <div
-    class="form-status"
-    id="formStatus"
-    role="status"
-  ></div>
-
-</form>
-
-      </div>
-
-    </section>
-
-
-    <script>
-
-      const form = document.getElementById("sponsorForm");
-
-      const shorts = document.getElementById("shorts");
-      const warmup = document.getElementById("warmup");
-
-      const totalPrice = document.getElementById("totalPrice");
-
-
-      function updateTotal() {
-
-        let total = 100;
-
-        if (shorts.checked) {
-          total += 50;
-        }
-
-        if (warmup.checked) {
-          total += 50;
-        }
-
-        totalPrice.textContent = `$${total}`;
-
-      }
-
-
-      shorts.addEventListener("change", updateTotal);
-      warmup.addEventListener("change", updateTotal);
-
-    </script>
-
-
-  </main>
-
-
-  <!-- FOOTER -->
-
-  <footer style="
-    background: #111;
-    color: #fff;
-    padding: 32px 20px;
-    text-align: center;
-    border-top: 3px solid #8cc994;
-  ">
-
-    <div style="
-      max-width: 900px;
-      margin: 0 auto;
-    ">
-
-      <div style="
-        font-family: 'DotGothic16', monospace;
-        font-size: 13px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        color: #8cc994;
-        margin-bottom: 10px;
-      ">
-        Grassroots Mile Project
-      </div>
-
-      <p style="
-        margin: 0;
-        font-size: 12px;
-        line-height: 1.6;
-        color: #aaa;
-      ">
-        Built from the ground up. One mile at a time.
+      <p class="gallery-caption">
+        Optional add-ons are available: $50 for a racing-shorts logo and $50 for a warmup-top logo.
       </p>
 
-      <div style="
-        margin-top: 18px;
-        font-size: 11px;
-        color: #666;
-      ">
-        © 2026 Grassroots Mile Project
+    </div>
+  </section>
+
+  <section id="photos" class="gallery-section">
+    <div class="container">
+
+      <div class="section-head">
+        <div class="kicker">The project in action</div>
+        <h2 class="section-title">Real gear. Real training. Real miles.</h2>
+        <p class="section-intro">
+          A look at the gear and the work behind Grassroots Mile Project.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+
+        <figure>
+          <img src="images/standing.jpg" alt="Kai wearing the white Grassroots Mile Project racing singlet on the track">
+        </figure>
+
+        <figure>
+          <img src="images/zoom.jpg" alt="Close-up of the Grassroots Mile Project racing singlet showing logo placement">
+        </figure>
+
+        <figure>
+          <img src="images/tieshoe.jpg" alt="Flat lay of the Grassroots Mile Project racing singlet and gear">
+        </figure>
+
+        <figure>
+          <img src="images/logoshot.jpg" alt="Close-up of Grassroots Mile Project QR logo on dark athletic pants">
+        </figure>
+
+        <figure>
+          <img src="images/runningaway.jpg" alt="Kai running on the track, showing the back logo on his shirt">
+        </figure>
+
+        <figure>
+          <img src="images/runningshot.jpg" alt="Kai running towards the camera on the track in Grassroots Mile Project gear">
+        </figure>
+
+        <figure>
+          <img src="images/above2.jpg" alt="Top-down view of Grassroots Mile Project running shoes and singlet">
+        </figure>
+
+        <figure>
+          <img src="images/shoetie2.jpg" alt="Kai kneeling on the track tying his running shoe close-up">
+        </figure>
+
+        <figure>
+          <img src="images/singletshot.jpg" alt="Kai tying his running shoe on the track before a workout">
+        </figure>
+
       </div>
 
     </div>
+  </section>
 
-  </footer>
+  <section id="about" class="about-section">
+    <div class="container about-grid">
+
+      <div class="about-photo">
+        <img src="IMG_45666.JPG" alt="Grassroots Mile Project racing gear worn on the track">
+      </div>
+
+      <div class="about-copy">
+        <div class="kicker">The runner behind the project</div>
+
+        <h2 class="section-title">Kai Hillier.</h2>
+
+        <p class="lead">
+          I'm a sub-elite runner chasing a faster mile while balancing work, school, and the everyday costs of competitive running.
+        </p>
+
+        <p>
+          I'm a Wheaton College (MA) graduate student currently earning my Master's degree online in Sustainable Business. I train on Martha's Vineyard year round where I work on a farm. Grassroots Mile Project is my way of bringing a little creativity to the financial side of the sport — and giving businesses a simple way to be part of the journey.
+        </p>
+
+        <div class="stats">
+
+          <div class="stat">
+            <strong>4:14.71</strong>
+            <span>Mile personal best</span>
+          </div>
+
+          <div class="stat">
+            <strong>3:53.04</strong>
+            <span>1500m personal best</span>
+          </div>
+
+        </div>
+
+        <p>
+          Recent results include wins at the Montpelier Mile and Parkway Mile, plus a second-place finish at the Fairgrounds Mile in 4:16.59. My goal for the upcoming indoor season is to break 4:08 in the mile.
+        </p>
+
+        <div class="quote">
+          “The goal isn't just to run a fast mile. It's to build something from the ground up.”
+        </div>
+
+        <div class="socials">
+          <a class="btn btn-secondary" href="https://www.instagram.com/grassroots_mile_project" target="_blank" rel="noopener noreferrer">Instagram</a>
+
+          <a class="btn btn-secondary" href="https://youtube.com/@sunsetmilestrackclub?si=BFwTzgZyITxtDcmk" target="_blank" rel="noopener noreferrer">YouTube</a>
+
+          <a class="btn btn-secondary" href="https://www.tfrrs.org/athletes/8256861/Wheaton_MA/Kai_Hillier.html" target="_blank" rel="noopener noreferrer">College results</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+<section id="community" class="sponsors-meets-section">
+    <div class="container sponsors-meets-grid">
+
+      <!-- Left Half: Current Sponsors -->
+      <div class="sponsors-col">
+        <div class="kicker">Current Supporters</div>
+        <h2 class="section-title">Thank you to our sponsors.</h2>
+        <p class="section-intro">
+          A huge thank you to the businesses already supporting the Grassroots Mile Project and making this season possible.
+        </p>
+
+        <!-- Sponsor Image Placeholder -->
+        <figure class="sponsor-photo">
+          <img src="images/vineyard.jpg" alt="Grassroots Mile Project sponsor gear and singlet logos">
+        </figure>
+
+        <!-- Sponsor List Badges -->
+        <div class="sponsor-thanks-list">
+          <div class="sponsor-badge">Vineyard Dream Home Services</div>
+          <!-- Add more sponsors here as they join -->
+        </div>
+      </div>
+
+      <!-- Right Half: Upcoming Meets -->
+      <div class="meets-col">
+        <div class="kicker">Race Schedule</div>
+        <h2 class="section-title">Upcoming meets.</h2>
+        <p class="section-intro">
+          Where you can see the singlet in action next on the track.
+        </p>
+
+        <!-- Next Race Highlight -->
+        <div class="meet-card highlight-meet">
+          <div class="meet-label">NEXT RACE</div>
+          <h3 class="meet-name">BU Sharon Colyear-Danville Season Opener</h3>
+          <div class="meet-details">
+            <span class="meet-date">December 4, 2026</span>
+            <span>Boston University — Boston, MA</span>
+          </div>
+        </div>
+
+        <!-- Additional Race Placeholder -->
+        <div class="meet-card">
+          <div class="meet-label">UPCOMING</div>
+          <h3 class="meet-name">BU John Thomas Terrier Classic</h3>
+          <div class="meet-details">
+            <span class="meet-date">January 30, 2027</span>
+            <span>Boston University — Boston, MA</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <section id="contact" class="contact-section">
+    <div class="container contact-grid">
+
+      <div class="contact-info">
+        <div class="kicker">Get involved</div>
+
+        <h2 class="section-title">Put your logo on the next race.</h2>
+
+        <p>
+          Interested in sponsoring a spot? Send a request below and I'll follow up about placement, your logo, and next steps.
+        </p>
+
+        <p>
+          Questions? Email
+          <a href="mailto:kaihillier1@gmail.com" style="color:#285c34;font-weight:700;text-decoration:none">
+            kaihillier1@gmail.com
+          </a>.
+        </p>
+
+        <div class="contact-price">$100 / SINGLET SPOT</div>
+      </div>
+
+      <form
+        id="sponsorForm"
+        action="https://formsubmit.co/kaihillier1@gmail.com"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+
+        <input type="hidden" name="_subject" value="Grassroots Mile Project — Sponsorship Request">
+
+        <input type="hidden" name="_captcha" value="false">
+
+        <input type="hidden" name="_next" value="https://kaihillier.github.io/github.io/thankyou">
+
+        <div class="form-grid">
+
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" autocomplete="organization" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+
+          <div class="field">
+            <label for="website">Company website</label>
+            <input id="website" name="website" type="url" placeholder="https://">
+          </div>
+
+          <div class="field full">
+            <label for="logo">Company logo</label>
+
+            <div class="upload-box">
+              <input id="logo" name="attachment" type="file" accept=".png,.jpg,.jpeg,.svg">
+
+              <p>
+                Upload a PNG, JPG, JPEG, or SVG. Logos will be applied to a white background using heat-press vinyl. I'll be in touch about any necessary changes in order to make the logo work with heat press vinyl. All logos will be 3 inches at their widest point.
+              </p>
+            </div>
+          </div>
+
+          <div class="field full">
+            <label>Optional add-ons</label>
+
+            <div class="options-box">
+
+              <label class="check-option">
+                <input type="checkbox" id="shorts" name="shorts" value="50">
+                <span>Add logo to racing shorts <strong>+ $50</strong></span>
+              </label>
+
+              <label class="check-option">
+                <input type="checkbox" id="warmup" name="warmup" value="50">
+                <span>Add logo to warmup top <strong>+ $50</strong></span>
+              </label>
+
+            </div>
+          </div>
+
+          <div class="field full">
+            <div class="total-box">
+              <span>Sponsorship total</span>
+              <strong id="totalPrice">$100</strong>
+            </div>
+          </div>
+
+          <div class="field full">
+            <label for="message">Message</label>
+
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Tell me a little about your business or ask a question."
+            ></textarea>
+          </div>
+
+        </div>
+
+        <button class="btn btn-primary" type="submit">
+          Request a sponsorship spot
+        </button>
+
+        <p class="form-note">
+          Submitting this form sends your request and any attached logo by email.
+        </p>
+
+      </form>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-brand">Grassroots Mile Project</div>
+
+  <p>Built from the ground up. One mile at a time.</p>
+
+  <div class="copyright">
+    © 2026 Grassroots Mile Project
+  </div>
+</footer>
+
+<script>
+  const shorts = document.getElementById("shorts");
+  const warmup = document.getElementById("warmup");
+  const totalPrice = document.getElementById("totalPrice");
+
+  function updateTotal() {
+    let total = 100;
+
+    if (shorts.checked) total += 50;
+    if (warmup.checked) total += 50;
+
+    totalPrice.textContent = `$${total}`;
+  }
+
+  shorts.addEventListener("change", updateTotal);
+  warmup.addEventListener("change", updateTotal);
+</script>
 
 </body>
 </html>
